@@ -1,0 +1,55 @@
+@import "variables";
+
+footer{
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 0 100px;
+    background-color: $main-bg-color;
+}
+
+.form{
+    width: 100%;
+    &-title{
+        @include text(24px, $first-text-color, 29px);
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    &-item{
+        width: 100%;
+        max-width: 450px;
+        margin: 30px auto
+    }
+    &-label{
+        @include text(16px, $first-text-color, 20px);
+        text-align: left;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    input{
+        width: 100%;
+        heigth: 60px;
+        background-color: $container-color;
+        border-radius: 8px;
+    }
+    textarea{
+        width: 100%;
+        background-color: $container-color;
+        border-radius: 8px;
+    }
+    .btn-submit{
+        display: block;
+        width: 280px;
+        height: 40px;
+        background: $button-color;
+        box-shadow: 0px 2px 0px #B4E2F1;
+        border-radius: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 40px auto 0;
+        @include text(18px, $first-text-color, 40px);
+        &:hover{
+            color: $first-text-color;
+        } 
+    }
+}

@@ -1,38 +1,19 @@
 
-// Body
-$body-bg: #f5f8fa;
+//color
+$container-color: white;
+$main-bg-color: #F9ECFF;
+$first-text-color: black;
+$second-text-color: #AF7AA6;
+$bright-text-color: #EA49A5;
+$button-color: #EEFFFA;
+$comments-color: #EEFFFA;
 
-// Borders
-$laravel-border-color: darken($body-bg, 10%);
-$list-group-border: $laravel-border-color;
-$navbar-default-border: $laravel-border-color;
-$panel-default-border: $laravel-border-color;
-$panel-inner-border: $laravel-border-color;
-
-// Brands
-$brand-primary: #3097D1;
-$brand-info: #8eb4cb;
-$brand-success: #2ab27b;
-$brand-warning: #cbb956;
-$brand-danger: #bf5329;
-
-// Typography
-$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 14px;
-$line-height-base: 1.6;
-$text-color: #636b6f;
-
-// Navbar
-$navbar-default-bg: #fff;
-
-// Buttons
-$btn-default-color: $text-color;
-
-// Inputs
-$input-border: lighten($text-color, 40%);
-$input-border-focus: lighten($brand-primary, 25%);
-$input-color-placeholder: lighten($text-color, 30%);
-
-// Panels
-$panel-default-heading-bg: #fff;
+@mixin text($size, $color, $line-height) {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $size;
+    line-height: $line-height;
+    letter-spacing: 0.02em;
+    color: $color
+}
