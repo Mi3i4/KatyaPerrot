@@ -1,0 +1,100 @@
+@import "variables";
+
+.questions{
+    display: block;
+    width: 90%;
+    margin: 0 auto !important;
+    &-title{
+        @include text(18px, $first-text-color, 22px);
+        margin: 25px 0;
+        text-align: center;
+        &-first, &-third{
+            font-weight: 700;
+        }
+        &-second{
+            font-weight: 600;
+        }
+        &-third{
+            margin-top: 80px  
+        }
+        &-fourth{
+            @include text(14px, $first-text-color, 17px);
+            font-weight: 500;
+            margin-bottom: 60px 
+        }
+        .bright{
+            color: $second-text-color;
+        }
+    }
+}
+
+.questions-main{
+    margin: 0  !important;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    &-item{
+        
+        padding: 20px;
+        @include text(14px, $first-text-color, 17px);
+    }
+    &-title{
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+}
+
+.comments{
+    display: block;
+    width: 100%;
+    margin: 0 auto 0 !important;
+    padding: 80px 0;
+    background-color: $container-color;
+    &-title{
+        @include text(24px, $first-text-color, 29px);
+        font-weight: 600;
+        text-align: center;
+        margin: 80px 0;
+    }
+    .carousel{
+        width: 100%;
+        margin: 0 auto;
+        .carousel-insight-1{
+            padding: 5%  5% 5% 15%;
+            box-sizing: border-box;
+        }
+        .carousel-insight-2{
+            padding: 5%  15% 5% 5%;
+            box-sizing: border-box;
+        }
+        .carousel-text{
+            padding: 40px 18%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 600px;
+            background-color: $comments-color;
+        }
+        .carousel-text-wrap{
+            @include text(14px, $first-text-color, 17px);
+            font-style: italic;
+        }
+        .carousel-item{
+            margin: 0 !important;
+        }
+    }
+    .carousel-control-prev-icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+    .carousel-control-next-icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+}
+
+@media (max-width: 768px){
+    .carousel-insight-2, .carousel-insight-1{
+        padding: 5% 7.5% 5% 7.5% !important;
+    }
+
+}

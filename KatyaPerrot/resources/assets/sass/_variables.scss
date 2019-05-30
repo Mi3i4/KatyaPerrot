@@ -1,0 +1,19 @@
+
+//color
+$container-color: white;
+$main-bg-color: #F9ECFF;
+$first-text-color: black;
+$second-text-color: #AF7AA6;
+$bright-text-color: #EA49A5;
+$button-color: #EEFFFA;
+$comments-color: #EEFFFA;
+
+@mixin text($size, $color, $line-height) {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $size;
+    line-height: $line-height;
+    letter-spacing: 0.02em;
+    color: $color
+}

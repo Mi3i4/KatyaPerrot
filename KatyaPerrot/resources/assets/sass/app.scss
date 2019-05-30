@@ -1,0 +1,43 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,700,900&display=swap');
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// My SCSS
+@import "header";
+@import "target";
+@import "program21";
+@import "questions";
+@import "results";
+@import "garantee";
+@import "footer";
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    max-width: 1600px !important;
+    padding: 0 !important;
+    background-color: $container-color;
+}
+
+.clear-fix{
+    clear: both;
+}
+
+@media (min-width: 1200px){
+    .container{
+        padding: 100px 200px !important;
+        box-sizing: border-box;
+    } 
+}
+

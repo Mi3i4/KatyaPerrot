@@ -1,0 +1,113 @@
+// Variables
+@import "variables";
+
+
+// Header
+header{
+    display: block;
+    width: 100%;
+    background-color: $main-bg-color;
+}
+
+.social-icons{
+    margin: 46px 0 0 0;
+    width: 100%;
+    max-width: 300px;
+    height: 32px;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    &-unit{
+        width: 32px;
+        background-size: contain;
+        
+    }
+    &-unit1{ background-image: url(/site_img/social-icon1.png); }
+    &-unit2{ background-image: url(/site_img/social-icon2.png); }
+    &-unit3{ background-image: url(/site_img/social-icon3.png); }
+    &-unit4{ background-image: url(/site_img/social-icon4.png); }
+}
+
+.header-logo{
+    display: block !important;
+    margin: 46px auto 0  !important;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.header-title{
+    text-align: center;
+    width: 90%;
+    font-family: Montserrat;
+    &-first{
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 700;
+        margin: 60px auto 0;
+        color: $first-text-color;
+    }
+    &-second{
+        font-size: 34px;
+        line-height: 40px;
+        font-weight: 500;
+        margin: 40px auto 0;
+        color: $second-text-color;
+        span{
+            color: $first-text-color;
+        }
+    }
+}
+
+.header-main{
+    width: 90%;
+    margin: 40px auto 80px  !important;
+    background-color: $container-color;
+    padding: 0 0 30px;
+    &-first{
+        height: auto;
+        padding: 20px 20px 30px 20px;
+    }
+    &-img{
+        width: 100%;
+    }
+    &-second{         
+        padding: 20px 20px 30px 20px;
+        p{
+            text-indent: 20px;
+            margin-bottom: 16px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: $first-text-color;
+        }
+        p:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.header-slogan{
+    display: block;
+    width: 100%;
+    padding: 40px 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $first-text-color;
+    background-color: $container-color;
+    span{
+        display: inline-block;
+    }
+}
+
+@media (max-width: 940px){
+    
+}

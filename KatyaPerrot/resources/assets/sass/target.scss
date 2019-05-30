@@ -1,0 +1,81 @@
+@import "variables";
+
+main{
+    width: 100%;
+    background-color: $main-bg-color;
+    padding: 80px 0 0 0;
+}
+
+.target-diets{
+    display: block;
+    width: 90%;
+    margin: 0 auto 80px !important;
+    background-color: $container-color;
+    padding: 0 0 30px;
+    &-second{
+        height: auto;
+        padding: 20px 20px 30px 20px;
+    }
+    &-img{
+        width: 100%;
+    }
+    &-first{         
+        padding: 20px 20px 30px 20px;
+        p{
+            @include text(14px, $first-text-color, 20px);
+            margin-bottom: 24px;
+            text-indent: 20px;
+        }
+        p:last-child{
+            margin-bottom: 0;
+        }
+        .bright{
+            color: $second-text-color;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}
+
+.target-ideas{
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    background-color: $container-color;
+    padding: 60px 5% 60px;
+    &-first{
+        height: auto;
+        padding: 20px 20px 30px 20px;
+    }
+    &-img{
+        width: 100%;
+    }
+    &-second{         
+        padding: 20px 20px 30px 20px;
+        p{
+            @include text(18px, $first-text-color, 22px);
+            margin-bottom: 28px;
+        }
+        p:last-child{
+            margin-bottom: 0;   
+        }
+        p:first-child{
+            font-weight: 700;   
+        }
+        .bright{
+            color: $second-text-color ;
+            font-weight: 700 ;
+        }
+        .title{
+            font-weight: 700 ;
+        }
+        .title-big{
+            font-weight: 700 ;
+            font-size: 22px;
+        }
+        .cursive{
+            font-style: italic;
+        }
+    }
+}
+
