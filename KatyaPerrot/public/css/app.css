@@ -8651,8 +8651,9 @@ main {
 
 .program21-third .button {
   display: block;
-  width: 280px;
-  height: 40px;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
   background: #EEFFFA;
   -webkit-box-shadow: 0px 2px 0px #B4E2F1;
           box-shadow: 0px 2px 0px #B4E2F1;
@@ -8921,7 +8922,8 @@ main {
 }
 
 .garantee-img {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 260px;
   margin: 0 auto;
   display: block;
@@ -8942,8 +8944,9 @@ main {
 
 .garantee-buy .garantee-button {
   display: block;
-  width: 280px;
-  height: 40px;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
   background: #EEFFFA;
   -webkit-box-shadow: 0px 2px 0px #B4E2F1;
           box-shadow: 0px 2px 0px #B4E2F1;
@@ -9066,7 +9069,8 @@ footer {
 
 .form .btn-submit {
   display: block;
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   height: 40px;
   background: #EEFFFA;
   -webkit-box-shadow: 0px 2px 0px #B4E2F1;
@@ -9086,6 +9090,46 @@ footer {
 
 .form .btn-submit:hover {
   color: black;
+}
+
+.form .form-group {
+  margin: 30px auto !important;
+  height: auto;
+}
+
+.form #captcha-wrap {
+  margin-left: 0;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  max-width: 450px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form .captcha-img {
+  width: 200px;
+  height: 86px;
+  border-radius: 5px;
+}
+
+.form .captcha-refresh {
+  display: block;
+  width: 70px;
+}
+
+.form .validate-error {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  color: red;
 }
 
 body,

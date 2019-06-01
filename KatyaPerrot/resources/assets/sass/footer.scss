@@ -39,7 +39,8 @@ footer{
     }
     .btn-submit{
         display: block;
-        width: 280px;
+        width: 100%;
+        max-width: 280px;
         height: 40px;
         background: $button-color;
         box-shadow: 0px 2px 0px #B4E2F1;
@@ -52,4 +53,33 @@ footer{
             color: $first-text-color;
         } 
     }
+    .form-group{
+        margin: 30px auto !important;
+        height: auto;
+    }
+    
+    #captcha-wrap{
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 450px;
+    flex-wrap: wrap;
+    }
+
+    .captcha-img{
+        width: 200px;
+        height: 86px;
+        border-radius: 5px;
+    }
+
+    .captcha-refresh{
+        display: block;
+        width: 70px;
+    }
+    .validate-error{
+       @include text(12px, $errors-color, 14px); 
+    }
 }
+

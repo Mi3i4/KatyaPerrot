@@ -8,7 +8,10 @@
         "php": ">=5.6.4",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
-        "twbs/bootstrap": "4.0.0"
+        "mews/captcha": "^2.2",
+        "twbs/bootstrap": "4.0.0",
+        "yandex-money/yandex-checkout-sdk-php": "^1.2",
+        "frameworks/jquery": "2.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -38,11 +41,13 @@
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
             "xcopy vendor\\twbs\\bootstrap\\dist\\*.* public\\ /E /Y",
+            "xcopy vendor\\frameworks\\jquery\\jquery.min.js public\\ /E /Y",
             "php artisan optimize"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
             "xcopy vendor\\twbs\\bootstrap\\dist\\*.* public\\ /E /Y",
+             "xcopy vendor\\frameworks\\jquery\\jquery.min.js public\\ /E /Y",
             "php artisan optimize"
         ]
     },

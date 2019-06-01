@@ -51,7 +51,7 @@
                 <span> для здоровья,</span>
                 <span> и жить</span><br>
                 <span> более счастливой</span>
-                <span> и полноценной жизнью.</span>
+                <span> и полно<wbr>ценной жизнью.</span>
             </div>
         </header>
         <main role="main">
@@ -114,7 +114,7 @@
                         <p class="title">Оборудование</p>
                         <p>• Фитнес резинки, утяжелители (гантели или бутылки с водой)</p>
                         <p class="title-big">СТОИМОСТЬ <span class="bright">1190 руб.</span></p>
-                        <a href="#" class="button">Купить программу</a>
+                        <a href="{{ route('before_buy')}}" class="button">Купить программу</a>
                     </div>
                     <div class="program21-fourth col-sm-12 col-md-6">
                         <img src="/site_img/program21-2.png" class="program21-img" height="auto">
@@ -213,7 +213,7 @@
                 <img src="/site_img/garantee.png" class="garantee-img">
                 <div class="garantee-buy">
                     <div class="garantee-hr"></div>
-                    <a href="#" class="garantee-button">Купить программу</a>
+                    <a href="{{ route('before_buy')}}" class="garantee-button">Купить программу</a>
                     <div class="garantee-hr"></div>
                     <div class="clear-fix"></div>
                 </div>
@@ -228,7 +228,7 @@
 
 
         <footer>
-             <form action="/contactUs" method="post" role="form" class="form">
+             <form action="/contactUs" method="post" role="form" class="form" id="form">
                 <div class="form-title">Напиши мне</div>
                 {{ csrf_field() }}
                 <div class="form-item">
@@ -246,11 +246,35 @@
                     <textarea class="form-control" id="text" name="text" rows="6">{{ old('text') }}</textarea>
                     @if($errors->has('text'))  <div class="validate-error">{{ $errors->first('text') }}</div> @endif
                 </div>
+                <div class="form-group" id="captcha-wrap">
+                    <img src="{{ captcha_src('flat') }}" alt="captcha" class="captcha-img" data-refresh-config="flat">
+                    <div class="captcha-refresh" href="#" id="refresh"><img src="{{ asset('site_img/captcha_refresh.png') }}"  class="captcha-refresh"></div>
+                </div>
+                <div class="form-item">
+                    <div class="form-label">Подтверждение</div>
+                    <input class="form-control" type="text" name="captcha"/>
+                    @if($errors->has('captcha'))  <div class="validate-error">{{ $errors->first('captcha') }}</div> @endif
+                </div>
                 <button type="submit" class="btn-submit">Отправить</button>    
             </form>
         </footer>
     </div>
 <script src="{{ asset('/js/app.js') }}"></script>
+<script>
+    console.log('1');
+    $('#refresh').on('click',function(){
+        console.log('2');
+        var captcha = $('img.captcha-img');
+        var config = captcha.data('refresh-config');
+        $.ajax({
+            method: 'GET',
+            url: '/get_captcha/' + config,
+        }).done(function (response) {
+            captcha.prop('src', response);
+            console.log('3');
+        });
+    });
+</script>
 </body>
       
 </html>
