@@ -27,38 +27,19 @@
             <img src="/site_img/logo.png" class="header-logo">
         </header>
         <footer>
-             <form action="/register_buy" method="post" role="form" class="form">
-                <div class="form-title">Покупка</div>
+             <form  action="/password/email" method="post" role="form" class="form">
+                <div class="form-title">Востановление пароля</div>
                 {{ csrf_field() }}
-                <div class="form-item">
-                    <div class="form-label">Ваш логин</div>
-                    <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}">
-                    @if($errors->has('name'))  <div class="validate-error">{{ $errors->first('name') }}</div> @endif
-                </div>
                 <div class="form-item">
                     <div class="form-label">Ваша почта</div>
                     <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}">
                     @if($errors->has('email'))  <div class="validate-error">{{ $errors->first('email') }}</div> @endif
                 </div>
-                 <div class="form-item">
-                    <div class="form-label">Установить пароль</div>
-                    <input type="password" class="form-control" id="password" name="password">
-                    @if($errors->has('password'))  <div class="validate-error">{{ $errors->first('password') }}</div> @endif
-                </div>
                  <div class="form-group">
-                    <a  href="/password/reset" class="validate-error">Восстановить пароль по email</a>
+                    <a  href="{{route('before_buy')}}" class="validate-error">Регистрация и покупка</a>
                     <a  href="{{ route('login_form') }}" class="validate-error">Вход в аккаунт</a>
-                </div>
-                <div class="form-group" id="captcha-wrap">
-                    <img src="{{ captcha_src('flat') }}" alt="captcha" class="captcha-img" data-refresh-config="flat">
-                    <div class="captcha-refresh" href="#" id="refresh"><img src="{{ asset('site_img/captcha_refresh.png') }}"  class="captcha-refresh"></div>
-                </div>
-                <div class="form-item">
-                    <div class="form-label">Подтверждение</div>
-                    <input class="form-control" type="text" name="captcha"/>
-                    @if($errors->has('captcha'))  <div class="validate-error">{{ $errors->first('captcha') }}</div> @endif
-                </div>
-                <button type="submit" class="btn-submit">Купить</button>    
+                 </div>
+                <button type="submit" class="btn-submit">Восстановить пароль по email</button>    
             </form>
         </footer>
     </div>
@@ -80,3 +61,5 @@
 </script>
 </body>
 </html>
+
+

@@ -27,11 +27,14 @@ class ControllerContactUs extends Controller
         
         if ($validator->fails()) {
     
-            //Mail::to('lmkosenkova1@gmail.com')->cc('nvmoiseikin@gmail.com')->send(new ContactUsMail($validator));
         }
         else {
-            $data = $validator->all();
+            $data = $request->all();
         
+            
+            var_dump($data);
+            die('not success');
+            
             try {
             $result = Mail::send('mail', ['data' => $data], function ($message) use ($data) {
                 $mail_admin = env('MAIL_ADMIN');
@@ -57,4 +60,6 @@ class ControllerContactUs extends Controller
         
         //return redirect()->back();
     }
+    
+    
 }
