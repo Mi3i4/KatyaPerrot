@@ -147,7 +147,7 @@
                     </article>
                 </div>
                 <div class="questions-title-third questions-title">Если у тебя еще остались вопросы:</div>
-                <div class="questions-title-fourth questions-title">Пожалуйста, напиши мне <span class="bright">katya.perrott.<wbr>fitness@gmail.com</span> и я отвечу в ближайшее время.</div>
+                <div class="questions-title-fourth questions-title">Пожалуйста, напиши мне <a href="mailto:katya.perrott.fitness@gmail.com" class="bright">katya.perrott.<wbr>fitness@gmail.com</a> и я отвечу в ближайшее время.</div>
             </article>
             <article class="comments">
                 <div class="comments-title">Отзывы тех, кто уже попробовал</div>

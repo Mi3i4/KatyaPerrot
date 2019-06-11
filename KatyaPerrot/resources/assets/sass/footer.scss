@@ -48,6 +48,7 @@ footer{
         text-align: center;
         text-decoration: none;
         margin: 40px auto 0;
+        border-style: none;
         @include text(18px, $first-text-color, 40px);
         &:hover{
             color: $first-text-color;
