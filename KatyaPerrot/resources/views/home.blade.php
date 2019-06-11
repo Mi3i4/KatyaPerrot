@@ -18,9 +18,9 @@
     <div class="container">
         <header>
             <div class="social-icons">
-                <a href="#" class="social-icons-unit social-icons-unit1"></a>
-                <a href="#" class="social-icons-unit social-icons-unit2"></a>
-                <a href="#" class="social-icons-unit social-icons-unit3"></a>
+                <a href="https://www.facebook.com/katyaperrottFITNESS/" class="social-icons-unit social-icons-unit1"></a>
+                <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" class="social-icons-unit social-icons-unit2"></a>
+                <a href="https://instagram.com/perrott.fit" class="social-icons-unit social-icons-unit3"></a>
                 <a href="#" class="social-icons-unit social-icons-unit4"></a>
             </div> 
             <div class="clear-fix"></div>
@@ -205,9 +205,9 @@
                     <div class="clear-fix"></div>
                 </div>
                 <div class="garantee-social">
-                    <a href="#" class="garantee-social-unit garantee-social-unit1"></a>
-                    <a href="#" class="garantee-social-unit garantee-social-unit2"></a>
-                    <a href="#" class="garantee-social-unit garantee-social-unit3"></a>
+                    <a href="https://www.facebook.com/katyaperrottFITNESS/" class="garantee-social-unit garantee-social-unit1"></a>
+                    <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" class="garantee-social-unit garantee-social-unit2"></a>
+                    <a href="https://instagram.com/perrott.fit" class="garantee-social-unit garantee-social-unit3"></a>
                     <a href="#" class="garantee-social-unit garantee-social-unit4"></a>
                 </div> 
             </article>
@@ -215,7 +215,7 @@
 
 
         <footer>
-             <form action="/contactUs" method="post" role="form" class="form" id="form">
+             <form action="#" method="get" role="form" class="form" id="form">
                 <div class="form-title">Напиши мне</div>
                 {{ csrf_field() }}
                 <div class="form-item">
