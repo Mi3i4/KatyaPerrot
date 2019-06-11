@@ -16,30 +16,6 @@
 </head>
 <body>
     <div class="container">
-         <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
-                        @if (Auth::guest())
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                        @else
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="#">
-                                            Logout
-                                        </a>
-
-                                        <form id="logout-form" action="#" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li>
-                        @endif
-                    </ul>
         <header>
             <div class="social-icons">
                 <a href="#" class="social-icons-unit social-icons-unit1"></a>
@@ -110,7 +86,7 @@
             <article class="program21">
                 <div class="program21-main row">
                     <div class="program21-first col-sm-12 col-md-6">
-                        <img src="/site_img/program21-1.png" class="program21-img" height="auto">
+                        <img src="/site_img/program21-1.jpeg" class="program21-img" height="auto">
                     </div>
 
                     <div class="program21-second col-sm-12 col-md-6">
@@ -138,7 +114,7 @@
                         <p class="title">Оборудование</p>
                         <p>• Фитнес резинки, утяжелители (гантели или бутылки с водой)</p>
                         <p class="title-big">СТОИМОСТЬ <span class="bright">1190 руб.</span></p>
-                        <a href="{{ route('before_buy')}}" class="button">Купить программу</a>
+                        <a href="#" class="button">Купить программу</a>
                     </div>
                     <div class="program21-fourth col-sm-12 col-md-6">
                         <img src="/site_img/program21-2.png" class="program21-img" height="auto">
@@ -184,10 +160,6 @@
                         <div class="carousel-insight-1 col-sm-12 col-md-6"><div class="carousel-text-wrap"><div class="carousel-text"><p>...“ Привет всем, у меня за неделю минус 2.4, что-то маловато, но чувствую себя хорошо, стало легче. Есть хотелось, но не всегда.</p><p>Хочу придерживаться правильного питания и физических нагрузок, так как хочется достигнуть большего!</p><p>Катюша, огромное тебе спасибо! Мне очень понравился марафон!</p><p> Думаю, в следующих буду с самого начала!...”</p></div></div></div>
                         <div class="carousel-insight-2 col-sm-12 col-md-6"><div class="carousel-text-wrap"><div class="carousel-text">...” Я реально кайфую от того, что смогла лишние кг. Еще муж так же начал питаться, ему очень нравится! Времени не так много, что бы готовить на 2-х разное меню...”</div></div></div>
                     </div>
-                    <div class="carousel-item row">
-                        <div class="carousel-insight-1 col-sm-12 col-md-6"><div class="carousel-text-wrap"><div class="carousel-text">...” Я реально кайфую от того, что смогла лишние кг. Еще муж так же начал питаться, ему очень нравится! Времени не так много, что бы готовить на 2-х разное меню...”</div></div></div>
-                        <div class="carousel-insight-2 col-sm-12 col-md-6"><div class="carousel-text-wrap"><div class="carousel-text"><p>...“ Привет всем, у меня за неделю минус 2.4, что-то маловато, но чувствую себя хорошо, стало легче. Есть хотелось, но не всегда.</p><p>Хочу придерживаться правильного питания и физических нагрузок, так как хочется достигнуть большего!</p><p>Катюша, огромное тебе спасибо! Мне очень понравился марафон!</p><p> Думаю, в следующих буду с самого начала!...”</p></div></div></div>
-                    </div>
                     
                   </div>
                   <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -209,18 +181,9 @@
                             <img src="/site_img/result1.png" class="carousel-img">
                         </div>
                         <div class="carousel-insight-2 col-sm-12 col-md-6">
-                            <img src="/site_img/result2.png" class="carousel-img">
+                            <img src="/site_img/result2.jpeg" class="carousel-img">
                         </div>
                     </div>
-                    <div class="carousel-item row">
-                        <div class="carousel-insight-1 col-sm-12 col-md-6">
-                            <img src="/site_img/result2.png" class="carousel-img">
-                        </div>
-                        <div class="carousel-insight-2 col-sm-12 col-md-6">
-                            <img src="/site_img/result1.png" class="carousel-img">
-                        </div>
-                    </div>
-                    
                   </div>
                   <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -237,7 +200,7 @@
                 <img src="/site_img/garantee.png" class="garantee-img">
                 <div class="garantee-buy">
                     <div class="garantee-hr"></div>
-                    <a href="{{ route('before_buy')}}" class="garantee-button">Купить программу</a>
+                    <a href="#" class="garantee-button">Купить программу</a>
                     <div class="garantee-hr"></div>
                     <div class="clear-fix"></div>
                 </div>
