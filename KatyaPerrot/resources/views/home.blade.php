@@ -27,7 +27,7 @@
             <div class="clear-fix"></div>
             <img src="/site_img/logo.png" class="header-logo">
             <div class="header-title header-title-first">
-                Не жди Понедельника!<br>Начни сегодня!
+                Не жди Понедель<wbr>ника!<br>Начни сегодня!
             </div>
             <div class="header-title header-title-second">
                 Хочешь трансформацию тела и сознания?<br>Присоединяйся к моей команде <a href="https://instagram.com/perrott.fit">#FITWITH<wbr>PERROTT</a>
