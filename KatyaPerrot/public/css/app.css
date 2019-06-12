@@ -9152,8 +9152,12 @@ html {
   clear: both;
 }
 
-.row {
-  -webkit-flex-wrap: wrap;
+.row:before {
+  content: none;
+}
+
+.row:after {
+  content: '';
 }
 
 @media (min-width: 1200px) {

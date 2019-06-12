@@ -7,11 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="yandex-verification" content="ce469169e9eb31f7" />
     @yield('robots')
-    <link rel="stylesheet" href="{{ asset('/css/normalize.css') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
           integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/my.css') }}">
      <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
     <title>Katya Perrot</title>
 </head>
