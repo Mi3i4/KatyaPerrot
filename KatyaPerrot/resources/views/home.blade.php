@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="yandex-verification" content="ce469169e9eb31f7" />
     @yield('robots')
     <link rel="stylesheet" href="{{ asset('/css/normalize.css') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
@@ -29,7 +30,7 @@
                 Не жди Понедельника!<br>Начни сегодня!
             </div>
             <div class="header-title header-title-second">
-                Хочешь трансформацию тела и сознания?<br>Присоединяйся к моей команде <a href="#">#FITWITH<wbr>PERROTT</a>
+                Хочешь трансформацию тела и сознания?<br>Присоединяйся к моей команде <a href="https://instagram.com/perrott.fit">#FITWITH<wbr>PERROTT</a>
             </div>
             <div class="header-main row">
                 <div class="header-main-first col-sm-12 col-md-6">
@@ -39,7 +40,6 @@
                     <p>Любая диета не даст долгосрочного результата, а внимательное отношение к тому, что ты ешь должно стать образом жизни, такой же естественной вещью, как душ по утрам.</p>
                     <p> Поэтому мой подход основан на идее вдумчивого и сбалансированного питания без ограничений и страха срывов и переедания.</p>
                     <p> Только пройдя свой собственный путь от простых утренних пробежек и сложных диет до продуманных тренировок в зале и правильного питания я наконец поняла, сколько людей делает такие же ошибки. </p>
-                    <p>Моя цель – помочь тебе найти баланс в питании и тренировках без вреда для здоровья, и жить более счастливой и полноценной жизнью.</p>
                 </div>
             </div>
             <div class="header-slogan">
@@ -70,7 +70,7 @@
             </article>
             <article class="target-ideas row">
                 <div class="target-ideas-first col-sm-12 col-md-6">
-                    <img src="/site_img/ideas.jpg" class="target-ideas-img" height="auto">
+                    <img src="/site_img/ideas.png" class="target-ideas-img" height="auto">
                 </div>
                 <div class="target-ideas-second col-sm-12 col-md-6">
                      <p class="title">Вот что мы сделаем:</p>
@@ -181,7 +181,7 @@
                             <img src="/site_img/result1.png" class="carousel-img">
                         </div>
                         <div class="carousel-insight-2 col-sm-12 col-md-6">
-                            <img src="/site_img/result2.jpeg" class="carousel-img">
+                            <img src="/site_img/result2.png" class="carousel-img">
                         </div>
                     </div>
                   </div>

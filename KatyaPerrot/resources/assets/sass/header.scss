@@ -53,7 +53,7 @@ header{
         font-weight: 500;
         margin: 40px auto 0;
         color: $second-text-color;
-        span{
+        a, a:hover{
             color: $first-text-color;
         }
     }

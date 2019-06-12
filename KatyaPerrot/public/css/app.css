@@ -8403,7 +8403,8 @@ header {
   color: #AF7AA6;
 }
 
-.header-title-second span {
+.header-title-second a,
+.header-title-second a:hover {
   color: black;
 }
 
@@ -9149,6 +9150,10 @@ html {
 
 .clear-fix {
   clear: both;
+}
+
+.row {
+  -webkit-flex-wrap: wrap;
 }
 
 @media (min-width: 1200px) {

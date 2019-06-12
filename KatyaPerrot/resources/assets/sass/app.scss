@@ -34,6 +34,10 @@ body, html {
     clear: both;
 }
 
+.row{
+   -webkit-flex-wrap: wrap; 
+}
+
 @media (min-width: 1200px){
     .container{
         padding: 100px 200px !important;
