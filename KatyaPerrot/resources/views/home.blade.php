@@ -182,6 +182,14 @@
                             <img src="/site_img/result2.png" class="carousel-img">
                         </div>
                     </div>
+                    <div class="carousel-item row">
+                        <div class="carousel-insight-1 col-sm-12 col-md-6">
+                            <img src="/site_img/result3.jpeg" class="carousel-img">
+                        </div>
+                        <div class="carousel-insight-2 col-sm-12 col-md-6">
+                            <img src="/site_img/result4.jpeg" class="carousel-img">
+                        </div>
+                    </div>
                   </div>
                   <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -213,7 +221,7 @@
 
 
         <footer>
-             <form action="#" method="get" role="form" class="form" id="form">
+             <form action="/contactUs" method="post" role="form" class="form" id="form">
                 <div class="form-title">Напиши мне</div>
                 {{ csrf_field() }}
                 <div class="form-item">

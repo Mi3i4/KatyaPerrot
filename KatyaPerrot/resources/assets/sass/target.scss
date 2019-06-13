@@ -68,6 +68,7 @@ main{
         }
         .title{
             font-weight: 700 ;
+            @include text(24px, $first-text-color, 29px);
         }
         .title-big{
             font-weight: 700 ;

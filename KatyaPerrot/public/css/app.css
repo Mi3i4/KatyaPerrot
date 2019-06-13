@@ -8425,12 +8425,22 @@ header {
 }
 
 .header-main-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 340px !important;
   padding: 20px 20px 30px 20px;
 }
 
 .header-main-second p {
   text-indent: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 0;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -8559,6 +8569,13 @@ main {
 
 .target-ideas-second .title {
   font-weight: 700;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: black;
 }
 
 .target-ideas-second .title-big {
@@ -8646,6 +8663,17 @@ main {
   margin-bottom: 20px;
 }
 
+.program21-second .title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #AF7AA6;
+  font-weight: 700;
+}
+
 .program21-third p {
   margin-left: 20px;
 }
@@ -8690,6 +8718,16 @@ main {
   color: black;
   margin: 25px 0;
   text-align: center;
+}
+
+.questions-title-first {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: black;
 }
 
 .questions-title-first,
@@ -8759,8 +8797,8 @@ main {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 32px;
+  line-height: 39px;
   letter-spacing: 0.02em;
   color: black;
   font-weight: 600;
@@ -8910,8 +8948,8 @@ main {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 32px;
+  line-height: 39px;
   letter-spacing: 0.02em;
   color: black;
   text-align: center;
@@ -9027,8 +9065,8 @@ footer {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 32px;
+  line-height: 39px;
   letter-spacing: 0.02em;
   color: black;
   text-align: center;
@@ -9046,8 +9084,8 @@ footer {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 22px;
   letter-spacing: 0.02em;
   color: black;
   text-align: left;

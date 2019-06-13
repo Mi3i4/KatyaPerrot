@@ -8,7 +8,7 @@
     color: $first-text-color;
     background-color: $container-color;
     &-title{
-        @include text(24px, $first-text-color, 29px);
+        @include text(32px, $first-text-color, 39px);
         text-align: center;
         font-weight: 700;
         .bright{
