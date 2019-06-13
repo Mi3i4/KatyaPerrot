@@ -17,6 +17,10 @@ Route::get('/', function () {
 
 Route::post('/contactUs', 'ControllerContactUs@ship')->name('contactUs');
 
+
+Route::get('/get_captcha/{config?}', function (\Mews\Captcha\Captcha $captcha, $config = 'flat') {
+    return $captcha->src($config);
+});
 /*** BUY
 Route::get('/before_buy', function () {return view('before_buy');})->name('before_buy');
 
@@ -30,9 +34,7 @@ Route::post('/receive', 'ControllerBuy@yandexReceive')->name('receive');
 
 Route::get('/buy', 'ControllerBuy@buy')->name('buy');
 
-Route::get('/get_captcha/{config?}', function (\Mews\Captcha\Captcha $captcha, $config = 'flat') {
-    return $captcha->src($config);
-});
+
     $router->post('password/email', 'ForgotPasswordController@sendResetLinkEmail');
     $router->post('password/reset', 'ResetPasswordController@reset');
     
