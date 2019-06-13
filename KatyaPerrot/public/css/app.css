@@ -8579,8 +8579,14 @@ main {
 }
 
 .target-ideas-second .title-big {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: black;
   font-weight: 700;
-  font-size: 22px;
 }
 
 .target-ideas-second .cursive {
@@ -8672,6 +8678,8 @@ main {
   letter-spacing: 0.02em;
   color: #AF7AA6;
   font-weight: 700;
+  text-align: center;
+  margin-left: 0;
 }
 
 .program21-third p {

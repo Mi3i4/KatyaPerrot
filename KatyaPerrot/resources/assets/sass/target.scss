@@ -71,8 +71,8 @@ main{
             @include text(24px, $first-text-color, 29px);
         }
         .title-big{
+            @include text(24px, $first-text-color, 29px);
             font-weight: 700 ;
-            font-size: 22px;
         }
         .cursive{
             font-style: italic;

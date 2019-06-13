@@ -54,6 +54,8 @@
         .title{
             @include text(24px, $second-text-color, 29px);
             font-weight: 700;
+            text-align: center;
+            margin-left: 0;
         }
     }
     &-third{
