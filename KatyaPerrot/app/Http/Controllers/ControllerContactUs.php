@@ -38,11 +38,9 @@ class ControllerContactUs extends Controller
             try {
             $result = Mail::send('mail', ['data' => $data], function ($message) use ($data) {
                 $mail_admin = env('MAIL_ADMIN');
-                $mail_admin2 = env('MAIL_ADMIN2');
                 //$message->from($data['email']);
                
                 $message->to($mail_admin)->replyTo($data['email'], $data['name'])->subject('Вопрос с сайта');
-                $message->to($mail_admin2)->replyTo($data['email'], $data['name'])->subject('Сообщения с сайта');
             
                 //var_dump($data);
             }); 
