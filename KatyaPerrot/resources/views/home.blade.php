@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-site-verification" content="4K9PAGLJOBiqiaPn3BEKJqAshvmdU3ZxAIj4k8Xbb8k" />
     <meta name="yandex-verification" content="ce469169e9eb31f7" />
     @yield('robots')
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
