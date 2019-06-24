@@ -21,6 +21,10 @@ Route::post('/contactUs', 'ControllerContactUs@ship')->name('contactUs');
 Route::get('/get_captcha/{config?}', function (\Mews\Captcha\Captcha $captcha, $config = 'flat') {
     return $captcha->src($config);
 });
+
+Route::get('/offerta', function () {return view('offerta');})->name('offerta');
+
+Route::get('/personal', function () {return view('personal');})->name('personal');
 /*** BUY
 Route::get('/before_buy', function () {return view('before_buy');})->name('before_buy');
 

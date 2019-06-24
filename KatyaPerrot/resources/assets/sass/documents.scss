@@ -1,0 +1,32 @@
+@import "variables";
+
+.documents{
+    padding: 30px 5% !important;
+    p{
+        @include text(14px, $first-text-color, 18px);
+        text-indent: 20px;
+    } 
+
+    
+    a, a:hover{
+        color: $second-text-color !important;
+    }
+    .marginB{
+        margin-bottom: 35px;
+    }
+    .title{
+        @include text(18px, $first-text-color, 22px);
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    .bold{
+        font-weight: 700;
+    }
+    .center{
+        text-align: center;
+    }
+    .bright{
+        color: $second-text-color;
+    }
+    
+}

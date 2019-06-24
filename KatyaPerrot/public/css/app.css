@@ -9014,10 +9014,50 @@ main {
   color: black;
 }
 
-.garantee-social {
+.garantee-links {
   margin: 60px auto 0;
-  width: 100%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.garantee-personal,
+.garantee-offerta {
+  text-align: center;
+  max-width: 320px;
+  min-width: 250px;
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #AF7AA6;
+  padding: 5px 5px;
+  border-bottom: 1px solid #AF7AA6;
+}
+
+.garantee-offerta {
+  margin-bottom: 35px;
+}
+
+.garantee-personal:hover,
+.garantee-offerta:hover {
+  color: #AF7AA6;
+  text-decoration: none;
+}
+
+.garantee-social {
   max-width: 300px;
+  min-width: 250px;
+  margin-bottom: 35px;
   height: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9045,6 +9085,13 @@ main {
 
 .garantee-social-unit4 {
   background-image: url(/site_img/social-icon4.png);
+}
+
+@media (max-width: 700px) {
+  .garantee-links {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 @media (max-width: 344px) {
@@ -9178,6 +9225,54 @@ footer {
   line-height: 14px;
   letter-spacing: 0.02em;
   color: red;
+}
+
+.documents {
+  padding: 30px 5% !important;
+}
+
+.documents p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: black;
+  text-indent: 20px;
+}
+
+.documents a,
+.documents a:hover {
+  color: #AF7AA6 !important;
+}
+
+.documents .marginB {
+  margin-bottom: 35px;
+}
+
+.documents .title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.documents .bold {
+  font-weight: 700;
+}
+
+.documents .center {
+  text-align: center;
+}
+
+.documents .bright {
+  color: #AF7AA6;
 }
 
 body,

@@ -49,10 +49,33 @@
             } 
         }
     }
-    &-social{
+    &-links{
         margin: 60px auto 0;
-        width: 100%;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+    }
+    &-personal, &-offerta{
+        text-align: center;
+        max-width: 320px;
+        min-width: 250px;
+        display: block;
+        @include text(16px, $second-text-color, 20px);
+        padding: 5px 5px;
+        border-bottom: 1px solid #AF7AA6;
+    }
+    &-offerta{
+        margin-bottom: 35px;
+    }
+    &-personal:hover, &-offerta:hover{
+        color: $second-text-color;
+        text-decoration: none;
+    }
+    &-social{
         max-width: 300px;
+        min-width: 250px;
+        margin-bottom: 35px;
         height: 32px;
         display: flex;
         justify-content: space-around;
@@ -68,6 +91,11 @@
     }
 }
 
+@media (max-width: 700px){
+    .garantee-links{
+        justify-content: space-around;
+    }
+}
 @media (max-width: 344px){
     .garantee{
         .garantee-hr{

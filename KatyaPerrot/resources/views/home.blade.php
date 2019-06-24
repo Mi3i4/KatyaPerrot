@@ -215,12 +215,18 @@
                     <div class="garantee-hr"></div>
                     <div class="clear-fix"></div>
                 </div>
-                <div class="garantee-social">
-                    <a href="https://www.facebook.com/katyaperrottFITNESS/" class="garantee-social-unit garantee-social-unit1"></a>
-                    <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" class="garantee-social-unit garantee-social-unit2"></a>
-                    <a href="https://instagram.com/perrott.fit" class="garantee-social-unit garantee-social-unit3"></a>
-                    <a href="#" class="garantee-social-unit garantee-social-unit4"></a>
-                </div> 
+                <div class="garantee-links">
+                    <div>
+                        <a href="{{ route('offerta')}}" class="garantee-offerta">Пользовательское соглашение</a>
+                        <a href="{{ route('personal')}}" class="garantee-personal">Обработка персональных данных</a>
+                    </div>
+                    <div class="garantee-social">
+                        <a href="https://www.facebook.com/katyaperrottFITNESS/" class="garantee-social-unit garantee-social-unit1"></a>
+                        <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" class="garantee-social-unit garantee-social-unit2"></a>
+                        <a href="https://instagram.com/perrott.fit" class="garantee-social-unit garantee-social-unit3"></a>
+                        <a href="#" class="garantee-social-unit garantee-social-unit4"></a>
+                    </div> 
+                </div>
             </article>
         </main>
 
