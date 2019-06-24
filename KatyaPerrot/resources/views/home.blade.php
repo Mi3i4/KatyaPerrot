@@ -21,7 +21,7 @@
                 <a href="https://www.facebook.com/katyaperrottFITNESS/" target="_blank" class="social-icons-unit social-icons-unit1"></a>
                 <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" target="_blank" class="social-icons-unit social-icons-unit2"></a>
                 <a href="https://instagram.com/perrott.fit" target="_blank" class="social-icons-unit social-icons-unit3"></a>
-                <a href="#" target="_blank" class="social-icons-unit social-icons-unit4"></a>
+                <a href="https://t.me/KatyaPerrott" target="_blank" class="social-icons-unit social-icons-unit4"></a>
             </div> 
             <div class="clear-fix"></div>
             <img src="/site_img/logo.png" class="header-logo">
@@ -224,7 +224,7 @@
                         <a href="https://www.facebook.com/katyaperrottFITNESS/" target="_blank" class="garantee-social-unit garantee-social-unit1"></a>
                         <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" target="_blank" class="garantee-social-unit garantee-social-unit2"></a>
                         <a href="https://instagram.com/perrott.fit" target="_blank" class="garantee-social-unit garantee-social-unit3"></a>
-                        <a href="#" target="_blank" class="garantee-social-unit garantee-social-unit4"></a>
+                        <a href="https://t.me/KatyaPerrott" target="_blank" class="garantee-social-unit garantee-social-unit4"></a>
                     </div> 
                 </div>
             </article>
