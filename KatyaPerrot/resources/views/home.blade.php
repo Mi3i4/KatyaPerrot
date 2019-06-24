@@ -18,10 +18,10 @@
     <div class="container">
         <header>
             <div class="social-icons">
-                <a href="https://www.facebook.com/katyaperrottFITNESS/" class="social-icons-unit social-icons-unit1"></a>
-                <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" class="social-icons-unit social-icons-unit2"></a>
-                <a href="https://instagram.com/perrott.fit" class="social-icons-unit social-icons-unit3"></a>
-                <a href="#" class="social-icons-unit social-icons-unit4"></a>
+                <a href="https://www.facebook.com/katyaperrottFITNESS/" target="_blank" class="social-icons-unit social-icons-unit1"></a>
+                <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" target="_blank" class="social-icons-unit social-icons-unit2"></a>
+                <a href="https://instagram.com/perrott.fit" target="_blank" class="social-icons-unit social-icons-unit3"></a>
+                <a href="#" target="_blank" class="social-icons-unit social-icons-unit4"></a>
             </div> 
             <div class="clear-fix"></div>
             <img src="/site_img/logo.png" class="header-logo">
