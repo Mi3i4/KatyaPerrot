@@ -64,6 +64,8 @@
         @include text(16px, $second-text-color, 20px);
         padding: 5px 5px;
         border-bottom: 1px solid #AF7AA6;
+        color: $second-text-color !important;
+        text-decoration: none !important;
     }
     &-offerta{
         margin-bottom: 35px;

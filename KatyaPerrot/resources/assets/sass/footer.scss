@@ -70,14 +70,14 @@ footer{
     }
 
     .captcha-img{
-        width: 200px;
-        height: 86px;
+        width: auto;
+        height: 50px;
         border-radius: 5px;
     }
 
     .captcha-refresh{
         display: block;
-        width: 70px;
+        width: 50px;
     }
     .validate-error{
        @include text(12px, $errors-color, 14px); 

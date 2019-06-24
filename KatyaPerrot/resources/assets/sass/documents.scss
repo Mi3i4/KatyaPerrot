@@ -6,8 +6,6 @@
         @include text(14px, $first-text-color, 18px);
         text-indent: 20px;
     } 
-
-    
     a, a:hover{
         color: $second-text-color !important;
     }
@@ -27,6 +25,9 @@
     }
     .bright{
         color: $second-text-color;
+    }
+    p:first-child{
+        font-weight: 500;
     }
     
 }
