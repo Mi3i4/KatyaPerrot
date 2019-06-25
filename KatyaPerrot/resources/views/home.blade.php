@@ -113,7 +113,7 @@
                         <p class="title">Оборудование</p>
                         <p>• Фитнес резинки, утяжелители (гантели или бутылки с водой)</p>
                         <p class="title-big">СТОИМОСТЬ <span class="bright">1190 руб.</span></p>
-                        <a href="#" class="button">Купить программу</a>
+                        <a href="https://21day.katyaperrott.com/zakaz" class="button">Купить программу</a>
                     </div>
                     <div class="program21-fourth col-sm-12 col-md-6">
                         <img src="/site_img/program21-2.png" class="program21-img" height="auto">
@@ -211,7 +211,7 @@
                 <img src="/site_img/garantee.png" class="garantee-img">
                 <div class="garantee-buy">
                     <div class="garantee-hr"></div>
-                    <a href="#" class="garantee-button">Купить программу</a>
+                    <a href="https://21day.katyaperrott.com/zakaz" class="garantee-button">Купить программу</a>
                     <div class="garantee-hr"></div>
                     <div class="clear-fix"></div>
                 </div>
@@ -264,6 +264,25 @@
         </footer>
     </div>
 <script src="{{ asset('/js/app.js') }}"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2465267246844710');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1"
+             src="https://www.facebook.com/tr?id=2465267246844710&ev=PageView
+&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 <script>
     console.log('1');
     $('#refresh').on('click',function(){
