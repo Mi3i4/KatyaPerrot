@@ -8336,11 +8336,14 @@ button.close {
 header {
   display: block;
   width: 100%;
-  background-color: #F9ECFF;
+  background-image: url(/site_img/header.png);
+  background-size: auto 100%;
+  background-position: 100% 20%;
 }
 
 .social-icons {
-  margin: 46px 0 0 0;
+  float: right;
+  margin: 20px 30px;
   width: 100%;
   max-width: 300px;
   height: 32px;
@@ -8374,33 +8377,41 @@ header {
 }
 
 .header-logo {
-  display: block !important;
-  margin: 46px auto 0  !important;
+  display: block;
+  margin: 20px 30px;
   width: 100%;
-  max-width: 500px;
+  max-width: 250px;
   height: auto;
+  float: right;
 }
 
 .header-title {
   text-align: center;
+  max-width: 570px;
   width: 90%;
-  font-family: Montserrat;
 }
 
 .header-title-first {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
   font-size: 48px;
   line-height: 60px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
   font-weight: 700;
-  margin: 60px auto 0;
-  color: black;
+  margin: 40px 30px 30px;
 }
 
 .header-title-second {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
   font-size: 34px;
   line-height: 40px;
-  font-weight: 500;
-  margin: 40px auto 0;
-  color: #AF7AA6;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin: 0 30px 30px;
 }
 
 .header-title-second a,
@@ -8410,21 +8421,7 @@ header {
 
 .header-main {
   width: 90%;
-  margin: 40px auto 80px  !important;
-  background-color: white;
-  padding: 0 0 30px;
-}
-
-.header-main-first {
-  height: auto;
-  padding: 20px 20px 30px 20px;
-}
-
-.header-main-img {
-  width: 100%;
-}
-
-.header-main-second {
+  margin: 0 30px 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8434,11 +8431,10 @@ header {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  min-height: 340px !important;
-  padding: 20px 20px 30px 20px;
+  min-height: 240px !important;
 }
 
-.header-main-second p {
+.header-main p {
   text-indent: 20px;
   margin-bottom: 0;
   font-family: Montserrat;
@@ -8450,7 +8446,7 @@ header {
   color: black;
 }
 
-.header-main-second p:last-child {
+.header-main p:last-child {
   margin-bottom: 0;
 }
 

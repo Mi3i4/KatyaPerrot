@@ -17,13 +17,6 @@
 <body>
     <div class="container">
         <header>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/katyaperrottFITNESS/" target="_blank" class="social-icons-unit social-icons-unit1"></a>
-                <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" target="_blank" class="social-icons-unit social-icons-unit2"></a>
-                <a href="https://www.instagram.com/katya.perrott/" target="_blank" class="social-icons-unit social-icons-unit3"></a>
-                <a href="https://t.me/KatyaPerrott" target="_blank" class="social-icons-unit social-icons-unit4"></a>
-            </div> 
-            <div class="clear-fix"></div>
             <img src="/site_img/logo.png" class="header-logo">
             <div class="header-title header-title-first">
                 Не жди Понедель<wbr>ника!<br>Начни сегодня!
@@ -31,17 +24,21 @@
             <div class="header-title header-title-second">
                 Хочешь трансформацию тела и сознания?<br>Присоединяйся к моей команде <a href="https://instagram.com/perrott.fit">#FITWITH<wbr>PERROTT</a>
             </div>
-            <div class="header-main row">
-                <div class="header-main-first col-sm-12 col-md-6">
-                    <img src="/site_img/header-photo.png" class="header-main-img" height="auto">
-                </div>
-                <div class="header-main-second col-sm-12 col-md-6">
+            <div class="header-main">
                     <p>Любая диета не даст долгосрочного результата, а внимательное отношение к тому, что ты ешь должно стать образом жизни, такой же естественной вещью, как душ по утрам.</p>
                     <p> Поэтому мой подход основан на идее вдумчивого и сбалансированного питания без ограничений и страха срывов и переедания.</p>
                     <p> Только пройдя свой собственный путь от простых утренних пробежек и сложных диет до продуманных тренировок в зале и правильного питания я наконец поняла, сколько людей делает такие же ошибки. </p>
-                </div>
             </div>
-            <div class="header-slogan">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/katyaperrottFITNESS/" target="_blank" class="social-icons-unit social-icons-unit1"></a>
+                <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" target="_blank" class="social-icons-unit social-icons-unit2"></a>
+                <a href="https://www.instagram.com/katya.perrott/" target="_blank" class="social-icons-unit social-icons-unit3"></a>
+                <a href="https://t.me/KatyaPerrott" target="_blank" class="social-icons-unit social-icons-unit4"></a>
+            </div>
+            <div class="clear-fix"></div>
+        </header>
+        <main role="main">
+            <article class="header-slogan">
                 <span>Моя цель – помочь</span>
                 <span> тебе найти баланс</span>
                 <span> в питании и</span><br>
@@ -51,9 +48,7 @@
                 <span> и жить</span><br>
                 <span> более счастливой</span>
                 <span> и полно<wbr>ценной жизнью.</span>
-            </div>
-        </header>
-        <main role="main">
+            </article>
             <article class="target-diets row">
                 <div class="target-diets-first col-sm-12 col-md-6">
                     <p>Помнишь все эти диеты, где надо сутками сидеть на кефире и яблоке или жевать исключительно салат?</p>

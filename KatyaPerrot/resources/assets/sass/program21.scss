@@ -22,7 +22,7 @@
     &-second, &-third{         
         padding: 20px 20px 30px 20px;
         p{
-            @include text(18px, $first-text-color, 20px);
+            @include text(18px, $first-text-color, 20px) ;
             margin-bottom: 15px;
         }
         p:last-child{
