@@ -3,24 +3,24 @@
 main{
     width: 100%;
     background-color: $main-bg-color;
-    padding: 80px 0 0 0;
+    padding: 0 0 0 0;
 }
 
 .target-diets{
     display: block;
-    width: 90%;
-    margin: 0 auto 80px !important;
-    background-color: $container-color;
-    padding: 0 0 30px;
+    width: 100%;
+    margin: 45px auto 45px !important;
+    background-color: $main-bg-color;
+    padding: 0 0 0;
     &-second{
         height: auto;
-        padding: 20px 20px 30px 20px;
+        padding: 30px 30px 40px 30px !important;
     }
     &-img{
         width: 100%;
     }
     &-first{         
-        padding: 20px 20px 30px 20px;
+        padding: 30px 30px 40px 30px!important;
         p{
             @include text(14px, $first-text-color, 20px);
             margin-bottom: 24px;
@@ -42,16 +42,16 @@ main{
     width: 100%;
     margin: 0 !important;
     background-color: $container-color;
-    padding: 60px 5% 60px;
+    padding: 60px 0 60px;
     &-first{
         height: auto;
-        padding: 20px 20px 30px 20px;
+        padding: 30px 40px 40px 30px !important;
     }
     &-img{
         width: 100%;
     }
     &-second{         
-        padding: 20px 20px 30px 20px;
+        padding: 30px 30px 40px 30px !important;
         p{
             @include text(18px, $first-text-color, 22px);
             margin-bottom: 28px;

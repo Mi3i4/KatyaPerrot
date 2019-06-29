@@ -1,9 +1,11 @@
 @import "variables";
 
 .questions{
+    background-color: $container-color;
     display: block;
-    width: 90%;
-    margin: 0 auto !important;
+    width: 100%;
+    margin: 0 auto 0 !important;
+    padding: 60px 0 60px;
     &-title{
         @include text(18px, $first-text-color, 22px);
         margin: 25px 0;
@@ -38,12 +40,13 @@
     flex-wrap: wrap;
     &-item{
         
-        padding: 20px;
+        padding: 20px 30px !important;
         @include text(14px, $first-text-color, 17px);
     }
     &-title{
         font-weight: 700;
         margin-bottom: 20px;
+        color: $second-text-color;
     }
 }
 
@@ -95,9 +98,3 @@
     }
 }
 
-@media (max-width: 768px){
-    .carousel-insight-2, .carousel-insight-1{
-        padding: 5% 7.5% 5% 7.5% !important;
-    }
-
-}

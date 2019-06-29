@@ -17,26 +17,31 @@
 <body>
     <div class="container">
         <header>
-            <img src="/site_img/logo.png" class="header-logo">
+            <div class="header-floatR">
+                <img src="/site_img/logo.png" class="header-logo">
+                <a class="header-tel" href="tel:+79850498992">+7 985 049 8992</a>
+            </div>
             <div class="header-title header-title-first">
-                Не жди Понедель<wbr>ника!<br>Начни сегодня!
+                Не жди <span>Понедель<wbr>ника!</span><br>Начни сегодня!
             </div>
             <div class="header-title header-title-second">
-                Хочешь трансформацию тела и сознания?<br>Присоединяйся к моей команде <a href="https://instagram.com/perrott.fit">#FITWITH<wbr>PERROTT</a>
+                Хочешь трансформацию <span>тела и сознания?</span><br>Присоединяйся <span>к моей команде</span><br><a href="https://instagram.com/perrott.fit">#FITWITH<wbr>PERROTT</a>
             </div>
             <div class="header-main">
                     <p>Любая диета не даст долгосрочного результата, а внимательное отношение к тому, что ты ешь должно стать образом жизни, такой же естественной вещью, как душ по утрам.</p>
                     <p> Поэтому мой подход основан на идее вдумчивого и сбалансированного питания без ограничений и страха срывов и переедания.</p>
                     <p> Только пройдя свой собственный путь от простых утренних пробежек и сложных диет до продуманных тренировок в зале и правильного питания я наконец поняла, сколько людей делает такие же ошибки. </p>
             </div>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/katyaperrottFITNESS/" target="_blank" class="social-icons-unit social-icons-unit1"></a>
-                <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" target="_blank" class="social-icons-unit social-icons-unit2"></a>
-                <a href="https://www.instagram.com/katya.perrott/" target="_blank" class="social-icons-unit social-icons-unit3"></a>
-                <a href="https://t.me/KatyaPerrott" target="_blank" class="social-icons-unit social-icons-unit4"></a>
-            </div>
+            <a href="https://21day.katyaperrott.com/zakaz" class="header-button">Начать программу</a>
+
             <div class="clear-fix"></div>
         </header>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/katyaperrottFITNESS/" target="_blank" class="social-icons-unit social-icons-unit1"></a>
+            <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" target="_blank" class="social-icons-unit social-icons-unit2"></a>
+            <a href="https://www.instagram.com/katya.perrott/" target="_blank" class="social-icons-unit social-icons-unit3"></a>
+            <a href="https://t.me/KatyaPerrott" target="_blank" class="social-icons-unit social-icons-unit4"></a>
+        </div>
         <main role="main">
             <article class="header-slogan">
                 <span>Моя цель – помочь</span>
@@ -78,7 +83,7 @@
                 </div>
             </article>
             <article class="program21">
-                <div class="program21-main row">
+                <div class="program21-main program21-main-1 row">
                     <div class="program21-first col-sm-12 col-md-6">
                         <img src="/site_img/program21-1.jpeg" class="program21-img" height="auto">
                     </div>
@@ -145,52 +150,45 @@
             </article>
             <article class="comments">
                 <div class="comments-title">Отзывы тех, кто уже попробовал</div>
-                
-                
-                
+
+
+
                 <div id="carousel" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active row">
-                        <div class="carousel-insight-1 col-sm-12 col-md-6"><div class="carousel-text-wrap"><div class="carousel-text"><p>...“ Привет всем, у меня за неделю минус 2.4, что-то маловато, но чувствую себя хорошо, стало легче. Есть хотелось, но не всегда.</p><p>Хочу придерживаться правильного питания и физических нагрузок, так как хочется достигнуть большего!</p><p>Катюша, огромное тебе спасибо! Мне очень понравился марафон!</p><p> Думаю, в следующих буду с самого начала!...”</p></div></div></div>
-                        <div class="carousel-insight-2 col-sm-12 col-md-6"><div class="carousel-text-wrap"><div class="carousel-text">...” Я реально кайфую от того, что смогла лишние кг. Еще муж так же начал питаться, ему очень нравится! Времени не так много, что бы готовить на 2-х разное меню...”</div></div></div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item row">
+                            <div class="carousel-item active col-sm-12 col-md-4"><div class="carousel-text-wrap"><div class="carousel-text"><p>...“ Привет всем, у меня за неделю минус 2.4, что-то маловато, но чувствую себя хорошо, стало легче. Есть хотелось, но не всегда.</p><p>Хочу придерживаться правильного питания и физических нагрузок, так как хочется достигнуть большего!</p><p>Катюша, огромное тебе спасибо! Мне очень понравился марафон!</p><p> Думаю, в следующих буду с самого начала!...”</p></div></div></div>
+                            <div class="carousel-item col-sm-12 col-md-4"><div class="carousel-text-wrap"><div class="carousel-text">...” Я реально кайфую от того, что смогла лишние кг. Еще муж так же начал питаться, ему очень нравится! Времени не так много, что бы готовить на 2-х разное меню...”</div></div></div>
+                            <div class="carousel-item col-sm-12 col-md-4"><div class="carousel-text-wrap"><div class="carousel-text"><p>...” Мои занятия спортом ушли на второй план когда появилась своя семья. Результат- за 4года +10кг. Первая неделя была переломная т.к. люблю сладкое,белый хлеб, порции побольше... . Через7-10 дней привыкла, даже понравилось.</p><p> Некоторые упражнения были сложными, но желание добиться цели победило. Спасибо,что помогли преодолеть себя....”</p></div></div></div>
+                            <div class="carousel-item col-sm-12 col-md-4"><div class="carousel-text-wrap"><div class="carousel-text"><p>...“Спасибо Кате и ее программе за волшебный пинок!</p><p>Спасибо, что на протяжении всех трех недель продолжала подстегивать и мотивировать делать упражнения и правильно питаться. Похудела на 4 кг.</p><p>Для меня это результат. Ушли сантиметры, появились силы и желание добиться больших результатов!...”</p></div></div></div>
                     </div>
-                    <div class="carousel-item row">
-                        <div class="carousel-insight-1 col-sm-12 col-md-6"><div class="carousel-text-wrap"><div class="carousel-text"><p>...” Мои занятия спортом ушли на второй план когда появилась своя семья. Результат- за 4года +10кг. Первая неделя была переломная т.к. люблю сладкое,белый хлеб, порции побольше... . Через7-10 дней привыкла, даже понравилось.</p><p> Некоторые упражнения были сложными, но желание добиться цели победило. Спасибо,что помогли преодолеть себя....”</p></div></div></div>
-                        <div class="carousel-insight-2 col-sm-12 col-md-6"><div class="carousel-text-wrap"><div class="carousel-text"><p>...“Спасибо Кате и ее программе за волшебный пинок!</p><p>Спасибо, что на протяжении всех трех недель продолжала подстегивать и мотивировать делать упражнения и правильно питаться. Похудела на 4 кг.</p><p>Для меня это результат. Ушли сантиметры, появились силы и желание добиться больших результатов!...”</p></div></div></div>
-                        
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </article>
             <article class="results">
                 <div class="results-title">Фотографии с результатами</div>
                 <div id="carousel1" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active row">
-                        <div class="carousel-insight-1 col-sm-12 col-md-6">
+                  <div class="carousel-inner row">
+
+                        <div class="carousel-item col-sm-12 col-md-4 active">
                             <img src="/site_img/result1.png" class="carousel-img">
                         </div>
-                        <div class="carousel-insight-2 col-sm-12 col-md-6">
+                        <div class="carousel-item col-sm-12 col-md-4">
                             <img src="/site_img/result2.png" class="carousel-img">
                         </div>
-                    </div>
-                    <div class="carousel-item row">
-                        <div class="carousel-insight-1 col-sm-12 col-md-6">
+                        <div class="carousel-item col-sm-12 col-md-4">
                             <img src="/site_img/result3.jpeg" class="carousel-img">
                         </div>
-                        <div class="carousel-insight-2 col-sm-12 col-md-6">
+                        <div class="carousel-item col-sm-12 col-md-4">
                             <img src="/site_img/result4.jpeg" class="carousel-img">
                         </div>
                     </div>
-                  </div>
                   <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -201,6 +199,7 @@
                   </a>
                 </div>
             </article>
+
             <article class="garantee">
                 <div class="garantee-title">Ты готова увидеть <span class="bright">РЕАЛЬНЫЙ</span> результат?</div>
                 <img src="/site_img/garantee.png" class="garantee-img">
@@ -258,7 +257,31 @@
             </form>
         </footer>
     </div>
+
 <script src="{{ asset('/js/app.js') }}"></script>
+    <script>
+        $('#carousel1').on('slide.bs.carousel', function (e) {
+
+            var $e = $(e.relatedTarget);
+            var idx = $e.index();
+            var itemsPerSlide = 3;
+            var totalItems = $('#carousel1 .carousel-item').length;
+            console.log(totalItems);
+            if (idx >= totalItems-(itemsPerSlide-1)) {
+                var it = itemsPerSlide - (totalItems - idx);
+                console.log(it);
+                for (var i=0; i<it; i++) {
+                    // append slides to end
+                    if (e.direction=="left") {
+                        $('#carousel1 .carousel-item').eq(i).appendTo('#carousel1 .carousel-inner');
+                    }
+                    else {
+                        $('#carousel1 .carousel-item').eq(0).appendTo('#carousel1 .carousel-inner');
+                    }
+                }
+            }
+        });
+    </script>
     <!-- Facebook Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s)

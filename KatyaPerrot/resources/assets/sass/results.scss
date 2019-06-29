@@ -14,14 +14,6 @@
     .carousel{
         width: 100%;
         margin: 0 auto;
-        .carousel-insight-1{
-            padding: 5%  5% 5% 15%;
-            box-sizing: border-box;
-        }
-        .carousel-insight-2{
-            padding: 5%  15% 5% 5%;
-            box-sizing: border-box;
-        }
         .carousel-img{
             display: flex;
             margin: 0 auto;
@@ -38,11 +30,4 @@
     .carousel-control-next-icon{
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
     }
-}
-
-@media (max-width: 768px){
-    .carousel-insight-2, .carousel-insight-1{
-        padding: 5% 7.5% 5% 7.5% !important;
-    }
-
 }

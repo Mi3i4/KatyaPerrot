@@ -3,9 +3,9 @@
 
 .program21{
     display: block;
-    width: 90%;
-    margin: 60px auto 100px !important;
-    background-color: $container-color;
+    width: 100%;
+    margin: 60px auto 35px !important;
+    background-color: $main-bg-color;
     padding: 0 0 30px;
     &-main{
         width: 100%;
@@ -14,13 +14,13 @@
     }
     &-first, &-fourth{
         height: auto;
-        padding: 20px 20px 30px 20px;
+        padding: 30px 30px 40px 30px !important;
     }
     &-img{
         width: 100%;
     }
     &-second, &-third{         
-        padding: 20px 20px 30px 20px;
+        padding: 30px 30px 40px 30px !important;
         p{
             @include text(18px, $first-text-color, 20px) ;
             margin-bottom: 15px;

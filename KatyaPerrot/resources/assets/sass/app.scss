@@ -16,6 +16,7 @@
 @import "results";
 @import "garantee";
 @import "footer";
+@import "carousel";
 @import "documents";
 
 body, html {
@@ -26,9 +27,10 @@ body, html {
 
 .container{
     width: 100%;
-    max-width: 1600px !important;
+    max-width: 2000px !important;
     padding: 0 !important;
     background-color: $container-color;
+    margin: 0;
 }
 
 .clear-fix{
@@ -39,7 +41,7 @@ body, html {
     
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1600px){
     .container{
         padding: 100px 200px !important;
         box-sizing: border-box;
