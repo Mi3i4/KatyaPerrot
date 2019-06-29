@@ -55,7 +55,7 @@
                 <span> и полно<wbr>ценной жизнью.</span>
             </article>
             <article class="target-diets row">
-                <div class="target-diets-first col-sm-12 col-md-6">
+                <div class="target-diets-first col-sm-12 col-md-6 order-sm-2">
                     <p>Помнишь все эти диеты, где надо сутками сидеть на кефире и яблоке или жевать исключительно салат?</p>
                     <p>Дело в том, что мы отказываем себе в любимой еде и доводим организм до стресса такими голодовками, а потом срываемся и бросаем начатое.</p>
                     <p>Или же сидим на диете до конца, но как только возвращаемся к обычному питанию вес возвращается.</p>
@@ -63,7 +63,7 @@
                     <p class="bright">Мой подход кардинально отличается!</p>
                     <p>Я хочу помочь тебе разорвать этот порочный круг и навсегда поменять твое пищевое поведение и вкусовые привычки.</p>
                 </div>
-                <div class="target-diets-second col-sm-12 col-md-6">
+                <div class="target-diets-second col-sm-12 col-md-6 order-sm-1">
                     <img src="/site_img/diets.png" class="target-diets-img" height="auto">
                 </div>
             </article>
@@ -154,12 +154,11 @@
 
 
                 <div id="carousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item row">
-                            <div class="carousel-item active col-sm-12 col-md-4"><div class="carousel-text-wrap"><div class="carousel-text"><p>...“ Привет всем, у меня за неделю минус 2.4, что-то маловато, но чувствую себя хорошо, стало легче. Есть хотелось, но не всегда.</p><p>Хочу придерживаться правильного питания и физических нагрузок, так как хочется достигнуть большего!</p><p>Катюша, огромное тебе спасибо! Мне очень понравился марафон!</p><p> Думаю, в следующих буду с самого начала!...”</p></div></div></div>
-                            <div class="carousel-item col-sm-12 col-md-4"><div class="carousel-text-wrap"><div class="carousel-text">...” Я реально кайфую от того, что смогла лишние кг. Еще муж так же начал питаться, ему очень нравится! Времени не так много, что бы готовить на 2-х разное меню...”</div></div></div>
-                            <div class="carousel-item col-sm-12 col-md-4"><div class="carousel-text-wrap"><div class="carousel-text"><p>...” Мои занятия спортом ушли на второй план когда появилась своя семья. Результат- за 4года +10кг. Первая неделя была переломная т.к. люблю сладкое,белый хлеб, порции побольше... . Через7-10 дней привыкла, даже понравилось.</p><p> Некоторые упражнения были сложными, но желание добиться цели победило. Спасибо,что помогли преодолеть себя....”</p></div></div></div>
-                            <div class="carousel-item col-sm-12 col-md-4"><div class="carousel-text-wrap"><div class="carousel-text"><p>...“Спасибо Кате и ее программе за волшебный пинок!</p><p>Спасибо, что на протяжении всех трех недель продолжала подстегивать и мотивировать делать упражнения и правильно питаться. Похудела на 4 кг.</p><p>Для меня это результат. Ушли сантиметры, появились силы и желание добиться больших результатов!...”</p></div></div></div>
+                    <div class="carousel-inner row">
+                            <div class="carousel-item active col-sm-12 col-md-4"><p>...“ Привет всем, у меня за неделю минус 2.4, что-то маловато, но чувствую себя хорошо, стало легче. Есть хотелось, но не всегда.</p><p>Хочу придерживаться правильного питания и физических нагрузок, так как хочется достигнуть большего!</p><p>Катюша, огромное тебе спасибо! Мне очень понравился марафон!</p><p> Думаю, в следующих буду с самого начала!...”</p></div>
+                            <div class="carousel-item col-sm-12 col-md-4">...” Я реально кайфую от того, что смогла лишние кг. Еще муж так же начал питаться, ему очень нравится! Времени не так много, что бы готовить на 2-х разное меню...”</div>
+                            <div class="carousel-item col-sm-12 col-md-4"><p>...” Мои занятия спортом ушли на второй план когда появилась своя семья. Результат- за 4года +10кг. Первая неделя была переломная т.к. люблю сладкое,белый хлеб, порции побольше... . Через7-10 дней привыкла, даже понравилось.</p><p> Некоторые упражнения были сложными, но желание добиться цели победило. Спасибо,что помогли преодолеть себя....”</p></div>
+                            <div class="carousel-item col-sm-12 col-md-4"><p>...“Спасибо Кате и ее программе за волшебный пинок!</p><p>Спасибо, что на протяжении всех трех недель продолжала подстегивать и мотивировать делать упражнения и правильно питаться. Похудела на 4 кг.</p><p>Для меня это результат. Ушли сантиметры, появились силы и желание добиться больших результатов!...”</p></div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -277,6 +276,29 @@
                     }
                     else {
                         $('#carousel1 .carousel-item').eq(0).appendTo('#carousel1 .carousel-inner');
+                    }
+                }
+            }
+        });
+    </script>
+    <script>
+        $('#carousel').on('slide.bs.carousel', function (e) {
+
+            var $e = $(e.relatedTarget);
+            var idx = $e.index();
+            var itemsPerSlide = 3;
+            var totalItems = $('#carousel .carousel-item').length;
+            console.log(totalItems);
+            if (idx >= totalItems-(itemsPerSlide-1)) {
+                var it = itemsPerSlide - (totalItems - idx);
+                console.log(it);
+                for (var i=0; i<it; i++) {
+                    // append slides to end
+                    if (e.direction=="left") {
+                        $('#carousel .carousel-item').eq(i).appendTo('#carousel .carousel-inner');
+                    }
+                    else {
+                        $('#carousel .carousel-item').eq(0).appendTo('#carousel .carousel-inner');
                     }
                 }
             }

@@ -8989,7 +8989,7 @@ main {
   display: block;
   width: 100%;
   margin: 0 auto 0 !important;
-  padding: 60px 0 60px;
+  padding: 60px 0 30px;
 }
 
 .questions-title {
@@ -9074,8 +9074,8 @@ main {
   display: block;
   width: 100%;
   margin: 0 auto 0 !important;
-  padding: 80px 0;
-  background-color: white;
+  padding: 30px 0;
+  background-color: #F9ECFF;
 }
 
 .comments-title {
@@ -9088,55 +9088,26 @@ main {
   color: black;
   font-weight: 600;
   text-align: center;
-  margin: 40px 0;
+  margin: 60px 0;
 }
 
 .comments .carousel {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
 
-.comments .carousel .carousel-insight-1 {
-  padding: 5%  5% 5% 15%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.comments .carousel .carousel-insight-2 {
-  padding: 5%  15% 5% 5%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.comments .carousel .carousel-text {
-  padding: 40px 18%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 600px;
-  background-color: #EEFFFA;
-}
-
-.comments .carousel .carousel-text-wrap {
+.comments .carousel .carousel-item {
+  padding: 25px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 18px;
   letter-spacing: 0.02em;
   color: black;
-  font-style: italic;
 }
 
-.comments .carousel .carousel-item {
+.comments .carousel-inner {
   margin: 0 !important;
 }
 
@@ -9144,14 +9115,22 @@ main {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
+.comments .carousel-control-prev {
+  left: -10%;
+}
+
 .comments .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.comments .carousel-control-next {
+  right: -10%;
 }
 
 .results {
   display: block;
   width: 100%;
-  padding: 70px 10px;
+  padding: 30px 10px;
   margin: 0 auto !important;
   color: black;
   background-color: #F9ECFF;
@@ -9166,10 +9145,12 @@ main {
   letter-spacing: 0.02em;
   color: black;
   text-align: center;
+  font-weight: 600;
+  margin-bottom: 50px;
 }
 
 .results .carousel {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -9186,8 +9167,20 @@ main {
   margin: 0  !important;
 }
 
+.results .carousel-inner {
+  margin: 0 !important;
+}
+
+.results .carousel-control-prev {
+  left: -10%;
+}
+
 .results .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.results .carousel-control-next {
+  right: -10%;
 }
 
 .results .carousel-control-next-icon {
@@ -9504,7 +9497,7 @@ footer {
             transform: translate3d(0, 0, 0);
   }
 
-  #carousel1.carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+  #carousel.carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
     position: absolute;
     top: 0;
     right: -33%;

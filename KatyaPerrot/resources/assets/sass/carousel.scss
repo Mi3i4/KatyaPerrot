@@ -23,7 +23,7 @@
     transform: translate3d(0, 0, 0);
   }
 
-  #carousel1.carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+  #carousel.carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
     position: absolute;
     top: 0;
     right: -33%;
