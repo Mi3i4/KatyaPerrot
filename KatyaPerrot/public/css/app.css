@@ -8499,14 +8499,18 @@ header {
   display: inline-block;
 }
 
+.header-slogan-sm {
+  display: none;
+}
+
 .header-button {
   display: block;
   width: 100%;
   max-width: 200px;
   height: auto;
   background: #EEFFFA;
-  -webkit-box-shadow: 0px 2px 0px #B4E2F1;
-          box-shadow: 0px 2px 0px #B4E2F1;
+  -webkit-box-shadow: 0 2px 0 #B4E2F1;
+          box-shadow: 0 2px 0 #B4E2F1;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
@@ -8639,31 +8643,6 @@ header {
   }
 }
 
-@media (max-width: 700px) {
-  .header-button {
-    display: none;
-  }
-
-  .header-button-sm {
-    display: block;
-    width: 90%;
-    margin: 30px auto 5px;
-    background-color: #F9ECFF;
-    -webkit-box-shadow: 0 2px 0 #808080;
-            box-shadow: 0 2px 0 #808080;
-    border-radius: 10px;
-    text-align: center;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 50px;
-    letter-spacing: 0.02em;
-    color: black;
-    font-weight: 500;
-  }
-}
-
 @media (max-width: 768px) {
   header {
     padding-top: 10px;
@@ -8741,6 +8720,52 @@ header {
     line-height: 11px;
     letter-spacing: 0.02em;
     color: black;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-button {
+    display: none;
+  }
+
+  .header-button-sm {
+    display: block;
+    width: 90%;
+    margin: 30px auto 5px;
+    background-color: #F9ECFF;
+    -webkit-box-shadow: 0 2px 0 #808080;
+            box-shadow: 0 2px 0 #808080;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: black;
+    font-weight: 500;
+  }
+
+  .header-slogan {
+    display: none;
+  }
+
+  .header-slogan-sm {
+    display: block;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: black;
+    text-indent: 20px;
+    text-align: justify;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 30px 10%;
+    background-color: white;
   }
 }
 
@@ -8904,6 +8929,20 @@ main {
 
 .target-ideas-second .cursive {
   font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .target-ideas-second {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .target-ideas-first {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 .program21 {
@@ -9936,7 +9975,7 @@ html {
 
 @media (min-width: 1600px) {
   .container {
-    padding: 100px 200px !important;
+    padding: 0 200px !important;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }

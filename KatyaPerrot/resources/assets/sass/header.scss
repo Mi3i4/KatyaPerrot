@@ -115,6 +115,9 @@ header{
     span{
         display: inline-block;
     }
+    &-sm{
+        display: none;
+    }
 }
 
 .header-button{
@@ -123,7 +126,7 @@ header{
     max-width: 200px;
     height: auto;
     background: #EEFFFA;
-    box-shadow: 0px 2px 0px #B4E2F1;
+    box-shadow: 0 2px 0 #B4E2F1;
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
@@ -210,41 +213,22 @@ header{
     }
 }
 
-@media (max-width: 700px) {
-    .header{
-        &-button{
-            display: none;
-        }
-        &-button-sm{
-            display: block;
-            width: 90%;
-            margin: 30px auto 5px;
-            background-color: $main-bg-color;
-            box-shadow: 0 2px 0 #808080;
-            border-radius: 10px;
-            text-align: center;
-            @include text(26px, $first-text-color, 50px);
-            font-weight: 500;
-        }
-    }
-}
-
 @media (max-width: 768px) {
-    header{
+    header {
         padding-top: 10px;
     }
-    .header-title, .header-main{
+    .header-title, .header-main {
         margin: 20px 0 20px;
     }
-    .header-floatR{
+    .header-floatR {
         margin: 0 5px 10px;
     }
-    .header-title{
+    .header-title {
         margin-top: 10px;
-        &-first{
+        &-first {
             @include text(28px, $first-text-color, 30px);
         }
-        &-second{
+        &-second {
             @include text(18px, $third-text-color, 20px);
         }
     }
@@ -259,13 +243,44 @@ header{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        &-unit{
+        &-unit {
             height: 20px;
             width: 20px;
         }
     }
-    .header-tel{
+    .header-tel {
         @include text(10px, $first-text-color, 11px);
+    }
+}
+
+@media (max-width: 700px) {
+    .header{
+        &-button{
+            display: none;
+        }
+        &-button-sm{
+            display: block;
+            width: 90%;
+            margin: 30px auto 5px;
+            background-color: $main-bg-color;
+            box-shadow: 0 2px 0 #808080;
+            border-radius: 10px;
+            text-align: center;
+            @include text(22px, $first-text-color, 40px);
+            font-weight: 500;
+        }
+    }
+    .header-slogan {
+        display: none;
+        &-sm {
+            display: block;
+            @include text(18px, $first-text-color, 22px);
+            text-indent: 20px;
+            text-align: justify;
+            justify-content: space-around;
+            padding: 30px 10%;
+            background-color: $container-color;
+        }
     }
 }
 

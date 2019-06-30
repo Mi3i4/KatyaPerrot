@@ -55,6 +55,9 @@
                 <span> более счастливой</span>
                 <span> и полно<wbr>ценной жизнью.</span>
             </article>
+            <article class="header-slogan-sm">
+                Моя цель – помочь тебе найти баланс в питании и тренировках без вреда для здоровья, и жить более счастливой и полно<wbr>ценной жизнью.
+            </article>
             <article class="target-diets row">
                 <div class="target-diets-second col-sm-12 col-md-6">
                     <img src="/site_img/diets.png" class="target-diets-img" height="auto">
@@ -69,10 +72,7 @@
                 </div>
             </article>
             <article class="target-ideas row">
-                <div class="target-ideas-first col-sm-12 col-md-6  order-1 order-md-2 order-xl-2 order-lg-2">
-                    <img src="/site_img/ideas.png" class="target-ideas-img" height="auto">
-                </div>
-                <div class="target-ideas-second col-sm-12 col-md-6 order-2 order-md-1 order-xl-1 order-lg-1">
+                <div class="target-ideas-second col-sm-12 col-md-6">
                      <p class="title">Вот что мы сделаем:</p>
                     <p>• научу тебя <span class="bright">грамотно сочетать продукты</span>, питаться вкусно, разнообразно и с пользой для организма.</p>
                     <p>• научу тебя тренироваться везде - где удобно тебе и тогда, когда удобно тебе. <span class="bright">Больше никаких оправданий!</span></p>
@@ -81,6 +81,9 @@
                     <p>• лично займусь процессом твоей трансформации и доведу тебя до результата <span class="bright">без вреда для твоего здоровья.</span></p>
                     <p class="title-big">Цель моей программы:</p>
                     <p class="cursive">Помочь тебе чувствовать себя комфортно и уверенно в своем теле, без жестких диет, ограничений и риска для здоровья.</p>
+                </div>
+                <div class="target-ideas-first col-sm-12 col-md-6">
+                    <img src="/site_img/ideas.png" class="target-ideas-img" height="auto">
                 </div>
             </article>
             <article class="program21">

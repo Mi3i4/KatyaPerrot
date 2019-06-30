@@ -54,7 +54,7 @@ main{
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
     }
-    &-second{         
+    &-second{
         padding: 30px 30px 40px 30px !important;
         p{
             @include text(18px, $first-text-color, 22px);
@@ -84,3 +84,13 @@ main{
     }
 }
 
+@media (max-width: 768px) {
+    .target-ideas{
+        &-second {
+            order: 2;
+        }
+        &-first {
+            order: 1
+        }
+    }
+}
