@@ -54,6 +54,7 @@
         @include text(26px, $first-text-color, 50px);
         &:hover{
             color: $first-text-color;
+            text-decoration: none;
         }
         margin: 15% auto 0;
     }
@@ -219,6 +220,10 @@
             text-align: center;
             @include text(26px, $first-text-color, 50px);
             font-weight: 500;
+            &:hover{
+                color: $first-text-color;
+                text-decoration: none;
+            }
             &-wrap{
                 display: block;
                 width: 90%;

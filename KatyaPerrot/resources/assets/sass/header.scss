@@ -135,6 +135,7 @@ header{
     @include text(18px, $first-text-color, 40px);
     &:hover{
         color: $first-text-color;
+        text-decoration: none;
     }
     margin: 30px 0 30px 100px;
 }
@@ -268,6 +269,10 @@ header{
             text-align: center;
             @include text(22px, $first-text-color, 40px);
             font-weight: 500;
+            &:hover{
+                color: $first-text-color;
+                text-decoration: none;
+            }
         }
     }
     .header-slogan {

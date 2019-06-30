@@ -8529,6 +8529,7 @@ header {
 
 .header-button:hover {
   color: black;
+  text-decoration: none;
 }
 
 .header-button-sm {
@@ -8745,6 +8746,11 @@ header {
     letter-spacing: 0.02em;
     color: black;
     font-weight: 500;
+  }
+
+  .header-button-sm:hover {
+    color: black;
+    text-decoration: none;
   }
 
   .header-slogan {
@@ -9358,6 +9364,7 @@ main {
 
 .garantee .garantee-button:hover {
   color: black;
+  text-decoration: none;
 }
 
 .garantee-links {
@@ -9616,6 +9623,11 @@ main {
     letter-spacing: 0.02em;
     color: black;
     font-weight: 500;
+  }
+
+  .garantee-button-sm:hover {
+    color: black;
+    text-decoration: none;
   }
 
   .garantee-button-sm-wrap {
