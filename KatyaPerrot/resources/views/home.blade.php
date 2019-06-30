@@ -200,27 +200,36 @@
             </article>
 
             <article class="garantee">
-                <div class="garantee-title">Ты готова увидеть <span class="bright">РЕАЛЬНЫЙ</span> результат?</div>
-                <img src="/site_img/garantee.png" class="garantee-img">
-                <div class="garantee-buy">
-                    <div class="garantee-hr"></div>
-                    <a href="https://21day.katyaperrott.com/zakaz" class="garantee-button">Купить программу</a>
-                    <div class="garantee-hr"></div>
-                    <div class="clear-fix"></div>
+                <div class="garantee-floatR">
+                    <img src="/site_img/garantee.png" class="garantee-img">
+                    <ul class="garantee-agree">
+                        <li>
+                            <div class="garantee-li">Условия</div>
+                            <ul class="garantee-ul-insight">
+                                <li><a href="{{ route('offerta')}}" target="_blank" class="garantee-offerta-sm">Пользовательское соглашение</a></li>
+                                <li><a href="{{ route('personal')}}" target="_blank" class="garantee-personal-sm">Обработка персональных данных</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <div class="garantee-links">
-                    <div>
-                        <a href="{{ route('offerta')}}" target="_blank" class="garantee-offerta">Пользовательское соглашение</a>
-                        <a href="{{ route('personal')}}" target="_blank" class="garantee-personal">Обработка персональных данных</a>
+                <div class="garantee-left">
+                    <div class="garantee-title">Ты готова увидеть <span class="bright">РЕАЛЬНЫЙ</span> результат?</div>
+                    <div class="garantee-links">
+                        <div>
+                            <a href="{{ route('offerta')}}" target="_blank" class="garantee-offerta">Пользовательское соглашение</a>
+                            <a href="{{ route('personal')}}" target="_blank" class="garantee-personal">Обработка персональных данных</a>
+                        </div>
                     </div>
-                    <div class="garantee-social">
-                        <a href="https://www.facebook.com/katyaperrottFITNESS/" target="_blank" class="garantee-social-unit garantee-social-unit1"></a>
-                        <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" target="_blank" class="garantee-social-unit garantee-social-unit2"></a>
-                        <a href="https://www.instagram.com/katya.perrott/" target="_blank" class="garantee-social-unit garantee-social-unit3"></a>
-                        <a href="https://t.me/KatyaPerrott" target="_blank" class="garantee-social-unit garantee-social-unit4"></a>
-                    </div> 
+                    <a href="https://21day.katyaperrott.com/zakaz" class="garantee-button">Купить программу</a>
                 </div>
             </article>
+            <div class="garantee-social">
+                <a href="https://www.facebook.com/katyaperrottFITNESS/" target="_blank" class="garantee-social-unit garantee-social-unit1"></a>
+                <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" target="_blank" class="garantee-social-unit garantee-social-unit2"></a>
+                <a href="https://www.instagram.com/katya.perrott/" target="_blank" class="garantee-social-unit garantee-social-unit3"></a>
+                <a href="https://t.me/KatyaPerrott" target="_blank" class="garantee-social-unit garantee-social-unit4"></a>
+            </div>
+            <div class="clear-fix"></div>
         </main>
 
 
