@@ -2,6 +2,7 @@
 
 
 .garantee{
+    max-width: 100% !important;
     width: 1600px;
     height: 0.455*1600px;
     display: block;
@@ -11,14 +12,14 @@
     margin: 0 auto !important;
     color: $first-text-color;
     &-left{
-        max-width: 370px;
+        max-width: 420px;
         margin: 0 0 0 7%;
         padding-top: 10%;
         width: 100%;
     }
     &-title{
         width: 100%;
-        @include text(32px, $third-text-color, 39px);
+        @include text(36px, $third-text-color, 42px);
         text-align: center;
         font-weight: 700;
         .bright{
@@ -31,48 +32,6 @@
         margin: 0 auto;
         float: right;
     }
-    ul{
-        list-style-type: none;
-        padding: 0;
-    }
-    &-agree{
-        display: none;
-        width: 100%;
-        margin-left: -30px;
-        position: relative;
-        .garantee-ul-insight li{
-        }
-        .garantee-ul-insight a{
-            @include text(12px, $first-text-color, 13px);
-            width: 100%;
-            text-align: center;
-            background-color: $main-bg-color;
-            text-decoration: underline;
-        }
-        .garantee-ul-insight a:hover{
-           color: $first-text-color;
-        }
-        .garantee-ul-insight{
-            display: none;
-            position: absolute;
-            top: 22px;
-            left: 0;
-            background-color: $main-bg-color;
-            border-radius: 10px;
-        }
-        .garantee-li{
-            display: block;
-            @include text(18px, $first-text-color, 24px);
-            width: 100%;
-            text-align: center;
-            background-color: $main-bg-color;
-            font-weight: 700;
-            border-radius: 10px;
-        }
-        &:hover ul{
-            display: block;
-        }
-    }
 
     &-img{
         width: 100%;
@@ -83,20 +42,20 @@
     .garantee-button{
         display: block;
         width: 100%;
-        max-width: 200px;
+        max-width: 290px;
         height: auto;
         background: #EEFFFA;
-        box-shadow: 0px 2px 0px #B4E2F1;
+        box-shadow: 0 2px 0 #B4E2F1;
         border-radius: 10px;
         text-align: center;
         text-decoration: none;
         padding: 0 10px;
         box-sizing: content-box;
-        @include text(18px, $first-text-color, 40px);
+        @include text(26px, $first-text-color, 50px);
         &:hover{
             color: $first-text-color;
         }
-        margin: 5% auto 0;
+        margin: 15% auto 0;
     }
     &-links{
         margin: 5% auto 0;
@@ -141,7 +100,9 @@
         &-unit4{ background-image: url(/site_img/social-icon4.png); }
     }
 }
-
+.garantee-button-sm-wrap{
+    display: none;
+}
 
 @media (max-width: 2000px) {
     .garantee {
@@ -155,12 +116,27 @@
         width: 100vw;
         height: 45.5vw;
     }
+    .garantee {
+        &-title {
+            @include text(30px, $third-text-color, 33px);
+            font-weight: 700;
+        }
+        &-left {
+            margin: 0 0 0 15px;
+            padding-top: 10%;
+            width: 35%;
+        }
+        .garantee-button {
+            @include text(20px, $first-text-color, 40px);
+            padding: 0 5px;
+        }
+    }
 }
 
 @media (max-width: 1200px) {
     .garantee{
         &-title{
-            @include text(24px, $third-text-color, 27px);
+            @include text(30px, $third-text-color, 33px);
             font-weight: 700;
         }
         &-left{
@@ -169,7 +145,7 @@
             width: 35%;
         }
         .garantee-button{
-            @include text(12px, $first-text-color, 20px);
+            @include text(20px, $first-text-color, 40px);
             padding: 0 5px;
         }
         &-offerta{
@@ -199,8 +175,9 @@
             padding-top: 5%;
         }
         &-title{
-            @include text(20px, $third-text-color, 24px);
+            @include text(24px, $third-text-color, 29px);
             font-weight: 700;
+            max-width: 280px;
         }
     }
 
@@ -212,11 +189,13 @@
     }
     .garantee{
         &-title{
-            @include text(18px, $third-text-color, 19px);
+            @include text(20px, $third-text-color, 23px);
             font-weight: 700;
+            margin-top: 15%;
+
         }
         .garantee-button{
-            padding: 0 5px;
+            display: none;
         }
         &-social{
             float: right;
@@ -231,8 +210,21 @@
                 background-size: contain;
             }
         }
-        &-agree{
+        &-button-sm{
             display: block;
+            width: 100%;
+            background-color: $main-bg-color;
+            box-shadow: 0 2px 0 #808080;
+            border-radius: 10px;
+            text-align: center;
+            @include text(26px, $first-text-color, 50px);
+            font-weight: 500;
+            &-wrap{
+                display: block;
+                width: 90%;
+                margin: 30px auto 30px;
+                background-color: $container-color;
+            }
         }
         &-links{
             display: none;
@@ -241,15 +233,12 @@
 }
 @media (max-width: 370px){
     .garantee {
+        &-title{
+            @include text(18px, $third-text-color, 20px);
+            font-weight: 700;
+        }
         .garantee-hr {
             display: none;
-        }
-        &-agree {
-            margin-top: -10px;
-        }
-        .garantee-button{
-            @include text(10px, $first-text-color, 15px);
-            padding: 0 5px;
         }
     }
 }

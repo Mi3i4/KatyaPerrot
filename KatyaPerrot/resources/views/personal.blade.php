@@ -17,6 +17,7 @@
 <body>
     <div class="container">
         <main class="documents">
+            <a href="https://www.katyaperrott.com" class="doc marginB back"><- На сайт</a>
             <p class="doc bright title marginB">Политика в отношении обработки персональных данных</p>
             <p class="doc marginB">1. Общие положения</p>
             <p class="doc marginB">Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных Перротт Екатерины Алексеевны (далее – Оператор).</p>
@@ -60,34 +61,8 @@
             <p class="doc marginB"> • Трансграничная передача персональных данных на территории иностранных государств, не отвечающих вышеуказанным требованиям, может осуществляться только в случае наличия согласия в письменной форме субъекта персональных данных на трансграничную передачу его персональных данных и/или исполнения договора, стороной которого является субъект персональных данных.</p><p class="doc marginB">8. Заключительные положения</p>
             <p class="doc"> • Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты <a href="mailTo:info@katyaperrott.com" class="bright">info@katyaperrott.com</a> </p>
             <p class="doc">• В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой версией. </p>
-            <p class="doc">• Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу <a href="https://katyaperrott.com" class="bright">https://katyaperrott.com</a></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            <p class="doc"></p>
-            
+            <p class="doc marginB">• Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу <a href="https://katyaperrott.com" class="bright">https://katyaperrott.com</a></p>
+            <a href="https://www.katyaperrott.com" class="doc back"><- На сайт</a>
         </main>   
     </div>
 </body>

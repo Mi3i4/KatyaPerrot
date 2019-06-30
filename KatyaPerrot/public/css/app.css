@@ -8334,6 +8334,7 @@ button.close {
 }
 
 header {
+  max-width: 100% !important;
   width: 1600px;
   height: 1081.6px;
   padding-top: 20px;
@@ -8526,6 +8527,10 @@ header {
   color: black;
 }
 
+.header-button-sm {
+  display: none;
+}
+
 @media (max-width: 2000px) {
   header {
     width: calc(100vw - 400px);
@@ -8634,6 +8639,31 @@ header {
   }
 }
 
+@media (max-width: 700px) {
+  .header-button {
+    display: none;
+  }
+
+  .header-button-sm {
+    display: block;
+    width: 90%;
+    margin: 30px auto 5px;
+    background-color: #F9ECFF;
+    -webkit-box-shadow: 0 2px 0 #808080;
+            box-shadow: 0 2px 0 #808080;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    color: black;
+    font-weight: 500;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     padding-top: 10px;
@@ -8723,6 +8753,8 @@ header {
     line-height: 17px;
     letter-spacing: 0.02em;
     color: black;
+    margin-top: 0;
+    margin-bottom: 15px;
   }
 
   .header-title-second {
@@ -8733,6 +8765,7 @@ header {
     line-height: 13px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    margin-bottom: 15px;
   }
 
   .header-button {
@@ -8768,6 +8801,9 @@ main {
 
 .target-diets-img {
   width: 100%;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
 .target-diets-first {
@@ -8811,6 +8847,9 @@ main {
 
 .target-ideas-img {
   width: 100%;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
 .target-ideas-second {
@@ -8885,6 +8924,13 @@ main {
 .program21-fourth {
   height: auto;
   padding: 30px 30px 40px 30px !important;
+}
+
+.program21-first img,
+.program21-fourth img {
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
 .program21-img {
@@ -8982,6 +9028,16 @@ main {
 
 .program21-third .button:hover {
   color: black;
+}
+
+@media (max-width: 768px) {
+  .program21-third p {
+    margin-left: 0;
+  }
+
+  .program21-second {
+    padding-bottom: 0 !important;
+  }
 }
 
 .questions {
@@ -9188,6 +9244,7 @@ main {
 }
 
 .garantee {
+  max-width: 100% !important;
   width: 1600px;
   height: 728px;
   display: block;
@@ -9199,7 +9256,7 @@ main {
 }
 
 .garantee-left {
-  max-width: 370px;
+  max-width: 420px;
   margin: 0 0 0 7%;
   padding-top: 10%;
   width: 100%;
@@ -9210,8 +9267,8 @@ main {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 36px;
+  line-height: 42px;
   letter-spacing: 0.02em;
   color: #FFFFFF;
   text-align: center;
@@ -9229,65 +9286,6 @@ main {
   float: right;
 }
 
-.garantee ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.garantee-agree {
-  display: none;
-  width: 100%;
-  margin-left: -30px;
-  position: relative;
-}
-
-.garantee-agree .garantee-ul-insight a {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 13px;
-  letter-spacing: 0.02em;
-  color: black;
-  width: 100%;
-  text-align: center;
-  background-color: #F9ECFF;
-  text-decoration: underline;
-}
-
-.garantee-agree .garantee-ul-insight a:hover {
-  color: black;
-}
-
-.garantee-agree .garantee-ul-insight {
-  display: none;
-  position: absolute;
-  top: 22px;
-  left: 0;
-  background-color: #F9ECFF;
-  border-radius: 10px;
-}
-
-.garantee-agree .garantee-li {
-  display: block;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  color: black;
-  width: 100%;
-  text-align: center;
-  background-color: #F9ECFF;
-  font-weight: 700;
-  border-radius: 10px;
-}
-
-.garantee-agree:hover ul {
-  display: block;
-}
-
 .garantee-img {
   width: 100%;
   max-width: 300px;
@@ -9298,11 +9296,11 @@ main {
 .garantee .garantee-button {
   display: block;
   width: 100%;
-  max-width: 200px;
+  max-width: 290px;
   height: auto;
   background: #EEFFFA;
-  -webkit-box-shadow: 0px 2px 0px #B4E2F1;
-          box-shadow: 0px 2px 0px #B4E2F1;
+  -webkit-box-shadow: 0 2px 0 #B4E2F1;
+          box-shadow: 0 2px 0 #B4E2F1;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
@@ -9312,11 +9310,11 @@ main {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 40px;
+  font-size: 26px;
+  line-height: 50px;
   letter-spacing: 0.02em;
   color: black;
-  margin: 5% auto 0;
+  margin: 15% auto 0;
 }
 
 .garantee .garantee-button:hover {
@@ -9402,6 +9400,10 @@ main {
   background-image: url(/site_img/social-icon4.png);
 }
 
+.garantee-button-sm-wrap {
+  display: none;
+}
+
 @media (max-width: 2000px) {
   .garantee {
     width: calc(100vw - 400px);
@@ -9414,15 +9416,13 @@ main {
     width: 100vw;
     height: 45.5vw;
   }
-}
 
-@media (max-width: 1200px) {
   .garantee-title {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 30px;
+    line-height: 33px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     font-weight: 700;
@@ -9438,8 +9438,38 @@ main {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: black;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .garantee-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    font-weight: 700;
+  }
+
+  .garantee-left {
+    margin: 0 0 0 15px;
+    padding-top: 10%;
+    width: 35%;
+  }
+
+  .garantee .garantee-button {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
     letter-spacing: 0.02em;
     color: black;
     padding: 0 5px;
@@ -9482,11 +9512,12 @@ main {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 29px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     font-weight: 700;
+    max-width: 280px;
   }
 }
 
@@ -9500,15 +9531,16 @@ main {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 19px;
+    font-size: 20px;
+    line-height: 23px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     font-weight: 700;
+    margin-top: 15%;
   }
 
   .garantee .garantee-button {
-    padding: 0 5px;
+    display: none;
   }
 
   .garantee-social {
@@ -9529,8 +9561,29 @@ main {
     background-size: contain;
   }
 
-  .garantee-agree {
+  .garantee-button-sm {
     display: block;
+    width: 100%;
+    background-color: #F9ECFF;
+    -webkit-box-shadow: 0 2px 0 #808080;
+            box-shadow: 0 2px 0 #808080;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    color: black;
+    font-weight: 500;
+  }
+
+  .garantee-button-sm-wrap {
+    display: block;
+    width: 90%;
+    margin: 30px auto 30px;
+    background-color: white;
   }
 
   .garantee-links {
@@ -9539,35 +9592,33 @@ main {
 }
 
 @media (max-width: 370px) {
-  .garantee .garantee-hr {
-    display: none;
-  }
-
-  .garantee-agree {
-    margin-top: -10px;
-  }
-
-  .garantee .garantee-button {
+  .garantee-title {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
-    line-height: 15px;
+    font-size: 18px;
+    line-height: 20px;
     letter-spacing: 0.02em;
-    color: black;
-    padding: 0 5px;
+    color: #FFFFFF;
+    font-weight: 700;
+  }
+
+  .garantee .garantee-hr {
+    display: none;
   }
 }
 
 footer {
   width: 100%;
   margin: 0 auto;
-  padding: 80px 0 100px;
+  padding: 30px 0 100px;
   background-color: #F9ECFF;
 }
 
 .form {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 !important;
 }
 
 .form-title {
@@ -9604,15 +9655,18 @@ footer {
 
 .form input {
   width: 100%;
-  heigth: 60px;
+  height: 56px;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 15px;
+  font-size: 26px;
+  padding: 10px;
 }
 
 .form textarea {
   width: 100%;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 15px;
+  font-size: 26px;
 }
 
 .form .btn-submit {
@@ -9679,6 +9733,40 @@ footer {
   line-height: 14px;
   letter-spacing: 0.02em;
   color: red;
+}
+
+.footer-img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto !important;
+}
+
+.footer-links {
+  margin-top: 60px;
+  float: right;
+  max-width: 220px;
+}
+
+.footer-links a {
+  display: inline-block;
+  text-decoration: underline;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  color: black;
+}
+
+.footer-links a:hover {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .form {
+    width: 90% !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -9771,7 +9859,20 @@ footer {
 
 .documents a,
 .documents a:hover {
-  color: #AF7AA6 !important;
+  color: #AF7AA6;
+}
+
+.documents .back,
+.documents .back:hover {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: black;
+  font-weight: 700;
+  display: block;
 }
 
 .documents .marginB {

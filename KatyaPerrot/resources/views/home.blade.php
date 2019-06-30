@@ -42,6 +42,7 @@
             <a href="https://www.instagram.com/katya.perrott/" target="_blank" class="social-icons-unit social-icons-unit3"></a>
             <a href="https://t.me/KatyaPerrott" target="_blank" class="social-icons-unit social-icons-unit4"></a>
         </div>
+        <a href="https://21day.katyaperrott.com/zakaz" class="header-button-sm">Начать программу</a>
         <main role="main">
             <article class="header-slogan">
                 <span>Моя цель – помочь</span>
@@ -55,7 +56,10 @@
                 <span> и полно<wbr>ценной жизнью.</span>
             </article>
             <article class="target-diets row">
-                <div class="target-diets-first col-sm-12 col-md-6 order-sm-2">
+                <div class="target-diets-second col-sm-12 col-md-6">
+                    <img src="/site_img/diets.png" class="target-diets-img" height="auto">
+                </div>
+                <div class="target-diets-first col-sm-12 col-md-6">
                     <p>Помнишь все эти диеты, где надо сутками сидеть на кефире и яблоке или жевать исключительно салат?</p>
                     <p>Дело в том, что мы отказываем себе в любимой еде и доводим организм до стресса такими голодовками, а потом срываемся и бросаем начатое.</p>
                     <p>Или же сидим на диете до конца, но как только возвращаемся к обычному питанию вес возвращается.</p>
@@ -63,15 +67,12 @@
                     <p class="bright">Мой подход кардинально отличается!</p>
                     <p>Я хочу помочь тебе разорвать этот порочный круг и навсегда поменять твое пищевое поведение и вкусовые привычки.</p>
                 </div>
-                <div class="target-diets-second col-sm-12 col-md-6 order-sm-1">
-                    <img src="/site_img/diets.png" class="target-diets-img" height="auto">
-                </div>
             </article>
             <article class="target-ideas row">
-                <div class="target-ideas-first col-sm-12 col-md-6">
+                <div class="target-ideas-first col-sm-12 col-md-6  order-1 order-md-2 order-xl-2 order-lg-2">
                     <img src="/site_img/ideas.png" class="target-ideas-img" height="auto">
                 </div>
-                <div class="target-ideas-second col-sm-12 col-md-6">
+                <div class="target-ideas-second col-sm-12 col-md-6 order-2 order-md-1 order-xl-1 order-lg-1">
                      <p class="title">Вот что мы сделаем:</p>
                     <p>• научу тебя <span class="bright">грамотно сочетать продукты</span>, питаться вкусно, разнообразно и с пользой для организма.</p>
                     <p>• научу тебя тренироваться везде - где удобно тебе и тогда, когда удобно тебе. <span class="bright">Больше никаких оправданий!</span></p>
@@ -182,10 +183,10 @@
                             <img src="/site_img/result2.png" class="carousel-img">
                         </div>
                         <div class="carousel-item col-sm-12 col-md-4">
-                            <img src="/site_img/result3.jpeg" class="carousel-img">
+                            <img src="/site_img/result3.png" class="carousel-img">
                         </div>
                         <div class="carousel-item col-sm-12 col-md-4">
-                            <img src="/site_img/result4.jpeg" class="carousel-img">
+                            <img src="/site_img/result4.png" class="carousel-img">
                         </div>
                     </div>
                   <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
@@ -202,24 +203,9 @@
             <article class="garantee">
                 <div class="garantee-floatR">
                     <img src="/site_img/garantee.png" class="garantee-img">
-                    <ul class="garantee-agree">
-                        <li>
-                            <div class="garantee-li">Условия</div>
-                            <ul class="garantee-ul-insight">
-                                <li><a href="{{ route('offerta')}}" target="_blank" class="garantee-offerta-sm">Пользовательское соглашение</a></li>
-                                <li><a href="{{ route('personal')}}" target="_blank" class="garantee-personal-sm">Обработка персональных данных</a></li>
-                            </ul>
-                        </li>
-                    </ul>
                 </div>
                 <div class="garantee-left">
                     <div class="garantee-title">Ты готова увидеть <span class="bright">РЕАЛЬНЫЙ</span> результат?</div>
-                    <div class="garantee-links">
-                        <div>
-                            <a href="{{ route('offerta')}}" target="_blank" class="garantee-offerta">Пользовательское соглашение</a>
-                            <a href="{{ route('personal')}}" target="_blank" class="garantee-personal">Обработка персональных данных</a>
-                        </div>
-                    </div>
                     <a href="https://21day.katyaperrott.com/zakaz" class="garantee-button">Купить программу</a>
                 </div>
             </article>
@@ -229,41 +215,57 @@
                 <a href="https://www.instagram.com/katya.perrott/" target="_blank" class="garantee-social-unit garantee-social-unit3"></a>
                 <a href="https://t.me/KatyaPerrott" target="_blank" class="garantee-social-unit garantee-social-unit4"></a>
             </div>
+
             <div class="clear-fix"></div>
         </main>
+        <div class="garantee-button-sm-wrap">
+            <a href="https://21day.katyaperrott.com/zakaz" class="garantee-button-sm">Начать программу</a>
+        </div>
 
 
         <footer>
-             <form action="/contactUs" method="post" role="form" class="form" id="form">
-                <div class="form-title">Напиши мне</div>
-                {{ csrf_field() }}
-                <div class="form-item">
-                    <div class="form-label">Ваше имя</div>
-                    <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}">
-                    @if($errors->has('name'))  <div class="validate-error">{{ $errors->first('name') }}</div> @endif
-                </div>
-                <div class="form-item">
-                    <div class="form-label">Ваша почта</div>
-                    <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}">
-                    @if($errors->has('email'))  <div class="validate-error">{{ $errors->first('email') }}</div> @endif
-                </div>
-                <div class="form-item">
-                    <div class="form-label">Ваш вопрос</div>
-                    <textarea class="form-control" id="text" name="text" rows="6">{{ old('text') }}</textarea>
-                    @if($errors->has('text'))  <div class="validate-error">{{ $errors->first('text') }}</div> @endif
-                </div>
-                <div class="form-group" id="captcha-wrap">
-                    <img src="{{ captcha_src('flat') }}" alt="captcha" class="captcha-img" data-refresh-config="flat">
-                    <div class="captcha-refresh" href="#" id="refresh"><img src="{{ asset('site_img/captcha_refresh.png') }}"  class="captcha-refresh"></div>
-                </div>
-                <div class="form-item">
-                    <div class="form-label">Подтверждение</div>
-                    <input class="form-control" type="text" name="captcha"/>
-                    @if($errors->has('captcha'))  <div class="validate-error">{{ $errors->first('captcha') }}</div> @endif
-                </div>
-                <button type="submit" class="btn-submit">Отправить</button>    
-            </form>
+             <div class="footer-row row">
+                 <div class="d-none d-md-block col-md-6">
+                    <img src="/site_img/footer.png" class="footer-img">
+                 </div>
+                 <div class="col-sm-12 col-md-6">
+                     <form action="/contactUs" method="post" role="form" class="form" id="form">
+                        <div class="form-title">Напиши мне</div>
+                        {{ csrf_field() }}
+                        <div class="form-item">
+                            <div class="form-label">Ваше имя</div>
+                            <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}">
+                            @if($errors->has('name'))  <div class="validate-error">{{ $errors->first('name') }}</div> @endif
+                        </div>
+                        <div class="form-item">
+                            <div class="form-label">Ваша почта</div>
+                            <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}">
+                            @if($errors->has('email'))  <div class="validate-error">{{ $errors->first('email') }}</div> @endif
+                        </div>
+                        <div class="form-item">
+                            <div class="form-label">Ваш вопрос</div>
+                            <textarea class="form-control" id="text" name="text" rows="4">{{ old('text') }}</textarea>
+                            @if($errors->has('text'))  <div class="validate-error">{{ $errors->first('text') }}</div> @endif
+                        </div>
+                        <div class="form-group" id="captcha-wrap">
+                            <img src="{{ captcha_src('flat') }}" alt="captcha" class="captcha-img" data-refresh-config="flat">
+                            <div class="captcha-refresh" href="#" id="refresh"><img src="{{ asset('site_img/captcha_refresh.png') }}"  class="captcha-refresh"></div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-label">Подтверждение</div>
+                            <input class="form-control" type="text" name="captcha"/>
+                            @if($errors->has('captcha'))  <div class="validate-error">{{ $errors->first('captcha') }}</div> @endif
+                        </div>
+                        <button type="submit" class="btn-submit">Отправить</button>
+                    </form>
+                 </div>
+            </div>
+            <div class="footer-links">
+                <a href="{{ route('offerta')}}" target="_blank" class="footer-offerta">Пользовательское соглашение</a>
+                <a href="{{ route('personal')}}" target="_blank" class="footer-personal">Обработка персональных данных</a>
+            </div>
         </footer>
+
     </div>
 
 <script src="{{ asset('/js/app.js') }}"></script>

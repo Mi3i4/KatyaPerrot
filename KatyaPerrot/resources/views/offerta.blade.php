@@ -17,6 +17,7 @@
 <body>
     <div class="container">
         <main class="documents">
+            <a href="https://www.katyaperrott.com" class="doc back"><- На сайт</a>
             <p class="doc center title">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</p>
             <p class="doc center marginB">г. Москва 17 июня 2019 г. </p>
             <p class="doc center title marginB">1. ОБЩИЕ ПОЛОЖЕНИЯ </p>
@@ -115,8 +116,8 @@
             <p class="doc center title marginB">9. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ </p>
             <p class="doc">9.1. Администрация сайта не принимает встречные предложения от Пользователя относительно изменений настоящего Пользовательского соглашения. </p>
             <p class="doc marginB">9.2. Отзывы Пользователя, размещенные на Сайте, не являются конфиденциальной информацией и могут быть использованы Администрацией сайта без ограничений.</p>
-            <p class="doc">Обновлено 17 июня 2019 г. </p>
-            
+            <p class="doc marginB">Обновлено 17 июня 2019 г. </p>
+            <a href="https://www.katyaperrott.com" class="doc back"><- На сайт</a>
             
         </main>   
     </div>
