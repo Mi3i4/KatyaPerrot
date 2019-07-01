@@ -19,7 +19,7 @@
         <header>
             <div class="header-floatR">
                 <img src="/site_img/logo.png" class="header-logo">
-                <a class="header-tel" href="tel:+79850498992">+7 985 049 8992</a>
+                <a class="header-tel" href="tel:+79850498991">+7 985 049 8991</a>
             </div>
             <div class="header-title header-title-first">
                 Не жди <span>Понедель<wbr>ника!</span><br>Начни сегодня!
@@ -42,6 +42,12 @@
             <a href="https://www.instagram.com/katya.perrott/" target="_blank" class="social-icons-unit social-icons-unit3"></a>
             <a href="https://t.me/KatyaPerrott" target="_blank" class="social-icons-unit social-icons-unit4"></a>
         </div>
+        <div class="header-title-sm header-title-sm-first">
+            Не жди Понедельника!<br>Начни сегодня!
+        </div>
+        <div class="header-title-sm header-title-sm-second">
+            Хочешь трансформацию <span>тела и сознания?</span><br>Присоединяйся <span>к моей команде</span><br><a href="https://instagram.com/perrott.fit">#FITWITH<wbr>PERROTT</a>
+        </div>
         <a href="https://21day.katyaperrott.com/zakaz" class="header-button-sm">Начать программу</a>
         <main role="main">
             <article class="header-slogan">
@@ -59,7 +65,7 @@
                 Моя цель – помочь тебе найти баланс в питании и тренировках без вреда для здоровья, и жить более счастливой и полно<wbr>ценной жизнью.
             </article>
             <article class="target-diets row">
-                <div class="target-diets-second col-sm-12 col-md-6">
+                <div class="target-diets-second col-sm-12 col-md-6 boot-photo">
                     <img src="/site_img/diets.png" class="target-diets-img" height="auto">
                 </div>
                 <div class="target-diets-first col-sm-12 col-md-6">
@@ -82,13 +88,13 @@
                     <p class="title-big">Цель моей программы:</p>
                     <p class="cursive">Помочь тебе чувствовать себя комфортно и уверенно в своем теле, без жестких диет, ограничений и риска для здоровья.</p>
                 </div>
-                <div class="target-ideas-first col-sm-12 col-md-6">
+                <div class="target-ideas-first col-sm-12 col-md-6 boot-photo">
                     <img src="/site_img/ideas.png" class="target-ideas-img" height="auto">
                 </div>
             </article>
             <article class="program21">
                 <div class="program21-main program21-main-1 row">
-                    <div class="program21-first col-sm-12 col-md-6">
+                    <div class="program21-first col-sm-12 col-md-6 boot-photo">
                         <img src="/site_img/program21-1.jpeg" class="program21-img" height="auto">
                     </div>
 
@@ -119,7 +125,7 @@
                         <p class="title-big">СТОИМОСТЬ <span class="bright">1190 руб.</span></p>
                         <a href="https://21day.katyaperrott.com/zakaz" class="button">Купить программу</a>
                     </div>
-                    <div class="program21-fourth col-sm-12 col-md-6">
+                    <div class="program21-fourth col-sm-12 col-md-6 boot-photo">
                         <img src="/site_img/program21-2.png" class="program21-img" height="auto">
                     </div>
                 </div>
@@ -202,7 +208,10 @@
                   </a>
                 </div>
             </article>
-
+            <div class="garantee-left-sm">
+                <div class="garantee-title-sm">Ты готова увидеть <br><span class="bright">РЕАЛЬНЫЙ</span><br> результат?</div>
+                <a href="https://21day.katyaperrott.com/zakaz" class="garantee-button-sm">Купить программу</a>
+            </div>
             <article class="garantee">
                 <div class="garantee-floatR">
                     <img src="/site_img/garantee.png" class="garantee-img">
@@ -211,6 +220,7 @@
                     <div class="garantee-title">Ты готова увидеть <span class="bright">РЕАЛЬНЫЙ</span> результат?</div>
                     <a href="https://21day.katyaperrott.com/zakaz" class="garantee-button">Купить программу</a>
                 </div>
+                <a class="garantee-tel-sm" href="tel:+79850498991">+7 985 049 8991</a>
             </article>
             <div class="garantee-social">
                 <a href="https://www.facebook.com/katyaperrottFITNESS/" target="_blank" class="garantee-social-unit garantee-social-unit1"></a>
@@ -221,9 +231,6 @@
 
             <div class="clear-fix"></div>
         </main>
-        <div class="garantee-button-sm-wrap">
-            <a href="https://21day.katyaperrott.com/zakaz" class="garantee-button-sm">Начать программу</a>
-        </div>
 
 
         <footer>

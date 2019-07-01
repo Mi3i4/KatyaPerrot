@@ -43,5 +43,8 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    .results {
+        padding: 30px 10px 10px;
+    }
 }

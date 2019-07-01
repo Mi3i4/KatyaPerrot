@@ -20,12 +20,12 @@
             font-weight: 600;
         }
         &-third{
-            margin-top: 80px  
+            margin-top: 80px;
         }
         &-fourth{
             @include text(14px, $first-text-color, 17px);
             font-weight: 500;
-            margin-bottom: 60px 
+            margin-bottom: 60px;
         }
         .bright{
             color: $second-text-color;
@@ -85,6 +85,23 @@
     }
     .carousel-control-next{
         right: -10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .questions,  .comments{
+        padding: 15px 0 15px;
+    }
+    .comments-title {
+        margin: 20px 0 !important;
+    }
+    .questions-title{
+        &-third{
+            margin-top: 20px;
+        }
+        &-fouth{
+            margin-bottom: 30px;
+        }
     }
 }
 

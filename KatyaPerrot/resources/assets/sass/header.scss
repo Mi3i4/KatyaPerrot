@@ -64,6 +64,9 @@ header{
     text-align: center;
     max-width: 570px;
     width: 100%;
+    &-sm{
+        display: none;
+    }
     span{
         display: inline-block;;
     }
@@ -122,17 +125,15 @@ header{
 
 .header-button{
     display: block;
-    width: 100%;
-    max-width: 200px;
-    height: auto;
+    width: 220px;
+    height: 50px;
     background: #EEFFFA;
     box-shadow: 0 2px 0 #B4E2F1;
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
-    padding: 0 10px;
     box-sizing: content-box;
-    @include text(18px, $first-text-color, 40px);
+    @include text(18px, $first-text-color, 50px);
     &:hover{
         color: $first-text-color;
         text-decoration: none;
@@ -176,10 +177,7 @@ header{
         width: 27%;
     }
     .header-button{
-        width: 32%;
-        padding: 0 6px;
-        @include text(18px, $first-text-color, 200%);
-        margin-left: 10%;
+        margin-left: 7%;
     }
     .header-main{
         max-width: 470px;
@@ -212,6 +210,18 @@ header{
     .header-tel{
         @include text(20px, $first-text-color, 23px);
     }
+    .header-slogan{
+        display: none;
+        &-sm {
+            display: block;
+            @include text(24px, $first-text-color, 28px);
+            text-indent: 20px;
+            text-align: justify;
+            justify-content: space-around;
+            padding: 30px 10%;
+            background-color: $container-color;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -233,20 +243,17 @@ header{
             @include text(18px, $third-text-color, 20px);
         }
     }
-    .header-button {
-        @include text(14px, $first-text-color, 200%);
-    }
     .social-icons {
         float: right;
-        margin: -140px 30px 20px;
-        width: 20px;
-        height: 130px;
+        margin: -190px 30px 20px;
+        width: 24px;
+        height: 180px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         &-unit {
-            height: 20px;
-            width: 20px;
+            height: 24px;
+            width: 24px;
         }
     }
     .header-tel {
@@ -261,22 +268,42 @@ header{
         }
         &-button-sm{
             display: block;
-            width: 90%;
+            width: 180px;
+            height: 50px;
             margin: 30px auto 5px;
-            background-color: $main-bg-color;
-            box-shadow: 0 2px 0 #808080;
+            background-color: $button-color;
+            box-shadow: 0 2px 0 #B4E2F1;
             border-radius: 10px;
             text-align: center;
-            @include text(22px, $first-text-color, 40px);
+            @include text(14px, $first-text-color, 40px);
             font-weight: 500;
             &:hover{
                 color: $first-text-color;
                 text-decoration: none;
             }
         }
+        &-title {
+            display: none;
+            &-sm{
+                display: block;
+                margin: 20px 0;
+                text-align: center;
+                &-first{
+                    @include text(22px, $first-text-color, 30px);
+                    font-weight: 700;
+
+                }
+                &-second{
+                    @include text(18px, $first-text-color, 30px);
+                    a, a:hover{
+                        text-decoration: none;
+                        color: $second-text-color;
+                    }
+                }
+            }
+        }
     }
     .header-slogan {
-        display: none;
         &-sm {
             display: block;
             @include text(18px, $first-text-color, 22px);
@@ -287,22 +314,52 @@ header{
             background-color: $container-color;
         }
     }
+    .social-icons {
+        margin: -64% 20px 20px;
+        width: 18px;
+        height: 140px;
+        &-unit {
+            height: 18px;
+            width: 18px;
+        }
+    }
+    .header-floatR {
+        margin: 0 10px 10px;
+        width: 35%;
+        float: left;
+    }
+    .header-logo {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .header-tel:hover, .header-tel{
+        text-decoration: underline;
+        @include text(16px, $third-text-color, 19px);
+        text-align: center;
+    }
 }
 
 @media (max-width: 500px){
-    .header-title{
+    .header-title-sm{
         &-first{
-            @include text(16px, $first-text-color, 17px);
-            margin-top: 0;
-            margin-bottom: 15px;
+            @include text(16px, $first-text-color, 28px);
+            font-weight: 700;
         }
         &-second{
-            @include text(12px, $third-text-color, 13px);
-            margin-bottom: 15px;
+            @include text(14px, $first-text-color, 28px);
         }
     }
-    .header-button {
-        width: 85px;
-        @include text(12px, $first-text-color, 150%);
+    .header-tel:hover, .header-tel{
+        text-decoration: underline;
+        @include text(12px, $third-text-color, 15px);
+        text-align: center;
+    }
+    .social-icons {
+        width: 14px;
+        height: 80px;
+        &-unit {
+            height: 14px;
+            width: 14px;
+        }
     }
 }

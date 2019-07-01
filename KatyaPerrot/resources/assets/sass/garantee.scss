@@ -11,7 +11,13 @@
     padding: 0;
     margin: 0 auto !important;
     color: $first-text-color;
+    &-tel-sm{
+        display: none;
+    }
     &-left{
+        &-sm{
+            display: none;
+        }
         max-width: 420px;
         margin: 0 0 0 7%;
         padding-top: 10%;
@@ -41,17 +47,14 @@
     }
     .garantee-button{
         display: block;
-        width: 100%;
-        max-width: 290px;
-        height: auto;
-        background: #EEFFFA;
+        width: 220px;
+        height: 50px;
+        background: $button-color;
         box-shadow: 0 2px 0 #B4E2F1;
         border-radius: 10px;
         text-align: center;
         text-decoration: none;
-        padding: 0 10px;
-        box-sizing: content-box;
-        @include text(26px, $first-text-color, 50px);
+        @include text(18px, $first-text-color, 50px);
         &:hover{
             color: $first-text-color;
             text-decoration: none;
@@ -127,10 +130,6 @@
             padding-top: 10%;
             width: 35%;
         }
-        .garantee-button {
-            @include text(20px, $first-text-color, 40px);
-            padding: 0 5px;
-        }
     }
 }
 
@@ -144,13 +143,6 @@
             margin: 0 0 0 15px;
             padding-top: 10%;
             width: 35%;
-        }
-        .garantee-button{
-            @include text(20px, $first-text-color, 40px);
-            padding: 0 5px;
-        }
-        &-offerta{
-            margin-bottom: 3%;
         }
     }
     .garantee-social{
@@ -181,6 +173,15 @@
             max-width: 280px;
         }
     }
+    .garantee-social {
+        margin: -80px 20px 20px;
+        width: 260px;
+        height: 28px;
+        &-unit {
+            height: 28px;
+            width: 28px;
+        }
+    }
 
 }
 
@@ -190,50 +191,82 @@
     }
     .garantee{
         &-title{
-            @include text(20px, $third-text-color, 23px);
-            font-weight: 700;
-            margin-top: 15%;
-
+           display: none;
         }
         .garantee-button{
             display: none;
         }
         &-social{
-            float: right;
-            margin: -30px 0 0;
-            width: 40%;
-            height: 20px;
-            display: flex;
-            justify-content: space-around;
+            float: left;
+            margin: -35px 15px 0;
+            width: 140px;
+            height: 18px;
             &-unit {
-                height: 20px;
-                width: 20px;
+                height: 18px;
+                width: 18px;
                 background-size: contain;
-            }
-        }
-        &-button-sm{
-            display: block;
-            width: 100%;
-            background-color: $main-bg-color;
-            box-shadow: 0 2px 0 #808080;
-            border-radius: 10px;
-            text-align: center;
-            @include text(26px, $first-text-color, 50px);
-            font-weight: 500;
-            &:hover{
-                color: $first-text-color;
-                text-decoration: none;
-            }
-            &-wrap{
-                display: block;
-                width: 90%;
-                margin: 30px auto 30px;
-                background-color: $container-color;
             }
         }
         &-links{
             display: none;
         }
+        &-left{
+            display: none;
+           &-sm{
+               padding: 20px 0;
+               background-color: $container-color;
+               display: block;
+               width: 100%;
+               .garantee-title-sm{
+                   @include text(30px, $first-text-color, 33px);
+                   text-align: center;
+                   font-weight: 700;
+                   .bright{
+                       color: $bright-text-color;
+                   }
+               }
+               .garantee-button-sm{
+                   display: block;
+                   width: 180px;
+                   height: 50px;
+                   background-color: $button-color;
+                   box-shadow: 0 2px 0 #B4E2F1;
+                   border-radius: 10px;
+                   text-align: center;
+                   @include text(14px, $first-text-color, 40px);
+                   font-weight: 500;
+                   &:hover{
+                       color: $first-text-color;
+                       text-decoration: none;
+                   }
+                   margin: 20px auto 30px;
+               }
+           }
+        }
+        &-tel-sm{
+            display: block;
+            float: left;
+            margin: 25px 12px;
+            @include text(16px, $third-text-color, 19px);
+            text-align: center;
+            text-decoration: underline;
+            &:hover{
+                color: $third-text-color;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .garantee{
+        &-tel-sm {
+            @include text(12px, $third-text-color, 15px);
+        }
+        &-title-sm {
+            @include text(24px, $first-text-color, 29px);
+            font-weight: 700;
+        }
+
     }
 }
 @media (max-width: 370px){
@@ -244,6 +277,17 @@
         }
         .garantee-hr {
             display: none;
+        }
+        &-social{
+            float: left;
+            margin: -30px 15px 0;
+            width: 100px;
+            height: 14px;
+            &-unit {
+                height: 14px;
+                width: 14px;
+                background-size: contain;
+            }
         }
     }
 }

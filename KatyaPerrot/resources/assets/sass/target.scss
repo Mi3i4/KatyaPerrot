@@ -12,9 +12,9 @@ main{
     margin: 45px auto 45px !important;
     background-color: $main-bg-color;
     padding: 0 0 0;
-    &-second{
+    &-second, .boot-photo{
         height: auto;
-        padding: 30px 30px 40px 30px !important;
+        padding: 30px 30px 40px 30px;
     }
     &-img{
         width: 100%;
@@ -45,9 +45,9 @@ main{
     margin: 0 !important;
     background-color: $container-color;
     padding: 60px 0 60px;
-    &-first{
+    &-first, .boot-photo{
         height: auto;
-        padding: 30px 40px 40px 30px !important;
+        padding: 30px 40px 40px 30px;
     }
     &-img{
         width: 100%;
@@ -91,6 +91,21 @@ main{
         }
         &-first {
             order: 1
+        }
+    }
+    .target-ideas{
+        padding: 0;
+        margin: 0;
+        &-first, .boot-photo{
+            padding: 0;
+        }
+
+    }
+    .target-diets{
+        padding: 0;
+        margin: 0 !important;
+        &-second, .boot-photo{
+            padding: 0;
         }
     }
 }

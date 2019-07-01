@@ -12,11 +12,11 @@
         padding: 0;
         margin: 0 !important;
     }
-    &-first, &-fourth{
+    &-first, &-fourth, .boot-photo{
         height: auto;
-        padding: 30px 30px 40px 30px !important;
+        padding: 30px 30px 40px 30px;
         img{
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
             border-radius: 5px;
         }
     }
@@ -68,29 +68,43 @@
         }
         .button{
             display: block;
-            width: 100%;
-            max-width: 280px;
-            height: auto;
+            width: 220px;
+            height: 50px;
             background: $button-color;
-            box-shadow: 0px 2px 0px #B4E2F1;
-            border-radius: 30px;
+            box-shadow: 0 2px 0 #B4E2F1;
+            border-radius: 10px;
             text-align: center;
             text-decoration: none;
-            @include text(18px, $first-text-color, 40px);
+            @include text(18px, $first-text-color, 50px);
             &:hover{
                 color: $first-text-color;
+                text-decoration: none;
             }
         }
     }
 }
 
 @media (max-width: 768px) {
+    .program21{
+        padding: 0;
+        margin: 0 !important;
+    }
     .program21-third{
         p{
             margin-left: 0;
+            text-indent: 20px;
+        }
+        .button{
+            width: 180px;
+            height: 40px;
+            @include text(14px, $first-text-color, 40px);
+            margin: 0 auto;
         }
     }
     .program21-second {
         padding-bottom: 0 !important;
+    }
+    .program21-first, .program21-fourth, .boot-photo{
+        padding: 0 !important;
     }
 }
