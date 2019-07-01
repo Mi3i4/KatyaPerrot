@@ -263,6 +263,10 @@ header{
 
 @media (max-width: 700px) {
     .header{
+        &-sm{
+            background-color: $main-bg-color;
+            padding: 20px 0;
+        }
         &-button{
             display: none;
         }
@@ -288,6 +292,7 @@ header{
                 display: block;
                 margin: 20px 0;
                 text-align: center;
+                background-color: $main-bg-color;
                 &-first{
                     @include text(22px, $first-text-color, 30px);
                     font-weight: 700;

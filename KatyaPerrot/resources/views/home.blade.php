@@ -42,6 +42,7 @@
             <a href="https://www.instagram.com/katya.perrott/" target="_blank" class="social-icons-unit social-icons-unit3"></a>
             <a href="https://t.me/KatyaPerrott" target="_blank" class="social-icons-unit social-icons-unit4"></a>
         </div>
+        <div class="header-sm">
         <div class="header-title-sm header-title-sm-first">
             Не жди Понедельника!<br>Начни сегодня!
         </div>
@@ -49,6 +50,7 @@
             Хочешь трансформацию <span>тела и сознания?</span><br>Присоединяйся <span>к моей команде</span><br><a href="https://instagram.com/perrott.fit">#FITWITH<wbr>PERROTT</a>
         </div>
         <a href="https://21day.katyaperrott.com/zakaz" class="header-button-sm">Начать программу</a>
+        </div>
         <main role="main">
             <article class="header-slogan">
                 <span>Моя цель – помочь</span>
@@ -244,17 +246,17 @@
                         {{ csrf_field() }}
                         <div class="form-item">
                             <div class="form-label">Ваше имя</div>
-                            <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}">
+                            <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" placeholder="Введите ваше имя">
                             @if($errors->has('name'))  <div class="validate-error">{{ $errors->first('name') }}</div> @endif
                         </div>
                         <div class="form-item">
                             <div class="form-label">Ваша почта</div>
-                            <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}">
+                            <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" placeholder="Введите вашу почту">
                             @if($errors->has('email'))  <div class="validate-error">{{ $errors->first('email') }}</div> @endif
                         </div>
                         <div class="form-item">
                             <div class="form-label">Ваш вопрос</div>
-                            <textarea class="form-control" id="text" name="text" rows="4">{{ old('text') }}</textarea>
+                            <textarea class="form-control" id="text" name="text" rows="4">{{ old('text') }} Введите ваш вопрос</textarea>
                             @if($errors->has('text'))  <div class="validate-error">{{ $errors->first('text') }}</div> @endif
                         </div>
                         <div class="form-group" id="captcha-wrap">
@@ -263,7 +265,7 @@
                         </div>
                         <div class="form-item">
                             <div class="form-label">Подтверждение</div>
-                            <input class="form-control" type="text" name="captcha"/>
+                            <input class="form-control" type="text" name="captcha" placeholder="Введите код"/>
                             @if($errors->has('captcha'))  <div class="validate-error">{{ $errors->first('captcha') }}</div> @endif
                         </div>
                         <button type="submit" class="btn-submit">Отправить</button>
