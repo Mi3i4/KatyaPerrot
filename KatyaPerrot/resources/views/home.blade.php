@@ -257,7 +257,7 @@
                         </div>
                         <div class="form-item">
                             <div class="form-label">Ваш вопрос</div>
-                            <textarea class="form-control" id="text" name="text" rows="4">{{ old('text') }} Введите ваш вопрос</textarea>
+                            <textarea class="form-control" id="text" name="text" rows="4" placeholder="Введите ваш вопрос">{{ old('text') }}</textarea>
                             @if($errors->has('text'))  <div class="validate-error">{{ $errors->first('text') }}</div> @endif
                         </div>
                         <div class="form-group" id="captcha-wrap">
@@ -279,12 +279,16 @@
             </div>
         </footer>
         @if (session('myflag'))
+
             <div class="mail-shadow">
             </div>
             <div class="mail-container">
                 <div class="mail-window">
+                    <div class="mail-title">
+                        Ваше сообщение отправлено!
+                    </div>
                     <div class="mail-p">
-                        Ваше сообщение отправлено!<br> Мы обязательно вам ответим!
+                        Благодарим за обращение мы обязательно свяжемся с вами!
                     </div>
                     <div class="mail-button">
                         Ок
