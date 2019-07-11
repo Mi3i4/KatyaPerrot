@@ -236,6 +236,7 @@
 
 
         <footer>
+
              <div class="footer-row row">
                  <div class="d-none d-md-block col-md-6">
                     <img src="/site_img/footer.png" class="footer-img">
@@ -277,56 +278,26 @@
                 <a href="{{ route('personal')}}" target="_blank" class="footer-personal">Обработка персональных данных</a>
             </div>
         </footer>
-
+        @if (session('myflag'))
+            <div class="mail-shadow">
+            </div>
+            <div class="mail-container">
+                <div class="mail-window">
+                    <div class="mail-p">
+                        Ваше сообщение отправлено!<br> Мы обязательно вам ответим!
+                    </div>
+                    <div class="mail-button">
+                        Ок
+                    </div>
+                </div>
+            </div>
+        @endif
     </div>
 
 <script src="{{ asset('/js/app.js') }}"></script>
-    <script>
-        $('#carousel1').on('slide.bs.carousel', function (e) {
+    <script src="{{ asset('/js/carousel.js') }}"></script>
+    <script src="{{ asset('/js/refresh_captcha.js') }}"></script>
 
-            var $e = $(e.relatedTarget);
-            var idx = $e.index();
-            var itemsPerSlide = 3;
-            var totalItems = $('#carousel1 .carousel-item').length;
-            console.log(totalItems);
-            if (idx >= totalItems-(itemsPerSlide-1)) {
-                var it = itemsPerSlide - (totalItems - idx);
-                console.log(it);
-                for (var i=0; i<it; i++) {
-                    // append slides to end
-                    if (e.direction=="left") {
-                        $('#carousel1 .carousel-item').eq(i).appendTo('#carousel1 .carousel-inner');
-                    }
-                    else {
-                        $('#carousel1 .carousel-item').eq(0).appendTo('#carousel1 .carousel-inner');
-                    }
-                }
-            }
-        });
-    </script>
-    <script>
-        $('#carousel').on('slide.bs.carousel', function (e) {
-
-            var $e = $(e.relatedTarget);
-            var idx = $e.index();
-            var itemsPerSlide = 3;
-            var totalItems = $('#carousel .carousel-item').length;
-            console.log(totalItems);
-            if (idx >= totalItems-(itemsPerSlide-1)) {
-                var it = itemsPerSlide - (totalItems - idx);
-                console.log(it);
-                for (var i=0; i<it; i++) {
-                    // append slides to end
-                    if (e.direction=="left") {
-                        $('#carousel .carousel-item').eq(i).appendTo('#carousel .carousel-inner');
-                    }
-                    else {
-                        $('#carousel .carousel-item').eq(0).appendTo('#carousel .carousel-inner');
-                    }
-                }
-            }
-        });
-    </script>
     <!-- Facebook Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s)
@@ -346,21 +317,9 @@
 &noscript=1"/>
     </noscript>
     <!-- End Facebook Pixel Code -->
-<script>
-    console.log('1');
-    $('#refresh').on('click',function(){
-        console.log('2');
-        var captcha = $('img.captcha-img');
-        var config = captcha.data('refresh-config');
-        $.ajax({
-            method: 'GET',
-            url: '/get_captcha/' + config,
-        }).done(function (response) {
-            captcha.prop('src', response);
-            console.log('3');
-        });
-    });
-</script>
+    <script>
+      $('.mail-button').click( function(){ $('.mail-shadow, .mail-container').fadeOut()})
+    </script>
 </body>
       
 </html>

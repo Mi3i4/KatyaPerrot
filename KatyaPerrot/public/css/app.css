@@ -10199,6 +10199,73 @@ input::placeholder {
   font-weight: 500;
 }
 
+.mail-container {
+  width: 140vw;
+  height: 140vh;
+  position: fixed;
+  left: -20vw;
+  top: -20vh;
+}
+
+.mail-shadow {
+  width: 140vw;
+  height: 140vh;
+  position: fixed;
+  background-color: black;
+  opacity: 0.5;
+  left: -20vw;
+  top: -20vh;
+}
+
+.mail-window {
+  width: 300px;
+  height: 80px;
+  text-align: center;
+  margin: 65vh auto;
+  background-color: #AF7AA6;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.mail-p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: black;
+  font-weight: 700;
+  margin: 0;
+}
+
+.mail-button {
+  display: block;
+  width: 70px;
+  height: 22px;
+  background: #EEFFFA;
+  -webkit-box-shadow: 0 2px 0 #B4E2F1;
+          box-shadow: 0 2px 0 #B4E2F1;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: black;
+  margin: 5px auto 0;
+  font-weight: 700;
+}
+
+.mail-button:hover {
+  cursor: pointer;
+}
+
 body,
 html {
   margin: 0;
