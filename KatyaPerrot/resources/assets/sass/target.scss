@@ -1,0 +1,111 @@
+@import "variables";
+
+main{
+    width: 100%;
+    background-color: $main-bg-color;
+    padding: 0 0 0 0;
+}
+
+.target-diets{
+    display: block;
+    width: 100%;
+    margin: 45px auto 45px !important;
+    background-color: $main-bg-color;
+    padding: 0 0 0;
+    &-second, .boot-photo{
+        height: auto;
+        padding: 30px 30px 40px 30px;
+    }
+    &-img{
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+    &-first{         
+        padding: 30px 30px 40px 30px!important;
+        p{
+            @include text(14px, $first-text-color, 20px);
+            margin-bottom: 24px;
+            text-indent: 20px;
+        }
+        p:last-child{
+            margin-bottom: 0;
+        }
+        .bright{
+            color: $second-text-color;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}
+
+.target-ideas{
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    background-color: $container-color;
+    padding: 60px 0 60px;
+    &-first, .boot-photo{
+        height: auto;
+        padding: 30px 40px 40px 30px;
+    }
+    &-img{
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+    &-second{
+        padding: 30px 30px 40px 30px !important;
+        p{
+            @include text(18px, $first-text-color, 22px);
+            margin-bottom: 28px;
+        }
+        p:last-child{
+            margin-bottom: 0;   
+        }
+        p:first-child{
+            font-weight: 700;   
+        }
+        .bright{
+            color: $second-text-color ;
+            font-weight: 700 ;
+        }
+        .title{
+            font-weight: 700 ;
+            @include text(24px, $first-text-color, 29px);
+        }
+        .title-big{
+            @include text(24px, $first-text-color, 29px);
+            font-weight: 700 ;
+        }
+        .cursive{
+            font-style: italic;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .target-ideas{
+        &-second {
+            order: 2;
+        }
+        &-first {
+            order: 1
+        }
+    }
+    .target-ideas{
+        padding: 0;
+        margin: 0;
+        &-first, .boot-photo{
+            padding: 0;
+        }
+
+    }
+    .target-diets{
+        padding: 0;
+        margin: 0 !important;
+        &-second, .boot-photo{
+            padding: 0;
+        }
+    }
+}
