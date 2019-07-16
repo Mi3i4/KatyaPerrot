@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-site-verification" content="4K9PAGLJOBiqiaPn3BEKJqAshvmdU3ZxAIj4k8Xbb8k" />
+    <meta name="yandex-verification" content="ce469169e9eb31f7" />
+    <?php echo $__env->yieldContent('robots'); ?>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+          integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php echo e(asset('/css/app.css')); ?>">
+     <link rel="stylesheet" href="<?php echo e(asset('/css/bootstrap.min.css')); ?>">
+    <title>Katya Perrot</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-floatR">
+                <img src="/site_img/logo.png" class="header-logo">
+                <a class="header-tel" href="tel:+79850498991">+7 985 049 8991</a>
+            </div>
+            <div class="header-title header-title-first">
+                Не жди <span>Понедель<wbr>ника!</span><br>Начни сегодня!
+            </div>
+            <div class="header-title header-title-second">
+                Хочешь трансформацию <span>тела и сознания?</span><br>Присоединяйся <span>к моей команде</span><br><a href="https://instagram.com/perrott.fit">#FITWITH<wbr>PERROTT</a>
+            </div>
+            <div class="header-main">
+                    <p>Любая диета не даст долгосрочного результата, а внимательное отношение к тому, что ты ешь должно стать образом жизни, такой же естественной вещью, как душ по утрам.</p>
+                    <p> Поэтому мой подход основан на идее вдумчивого и сбалансированного питания без ограничений и страха срывов и переедания.</p>
+                    <p> Только пройдя свой собственный путь от простых утренних пробежек и сложных диет до продуманных тренировок в зале и правильного питания я наконец поняла, сколько людей делает такие же ошибки. </p>
+            </div>
+            <a href="https://21day.katyaperrott.com/zakaz" class="header-button">Начать программу</a>
+
+            <div class="clear-fix"></div>
+        </header>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/katyaperrottFITNESS/" target="_blank" class="social-icons-unit social-icons-unit1"></a>
+            <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" target="_blank" class="social-icons-unit social-icons-unit2"></a>
+            <a href="https://www.instagram.com/katya.perrott/" target="_blank" class="social-icons-unit social-icons-unit3"></a>
+            <a href="https://t.me/KatyaPerrott" target="_blank" class="social-icons-unit social-icons-unit4"></a>
+        </div>
+        <div class="header-sm">
+        <div class="header-title-sm header-title-sm-first">
+            Не жди Понедельника!<br>Начни сегодня!
+        </div>
+        <div class="header-title-sm header-title-sm-second">
+            Хочешь трансформацию <span>тела и сознания?</span><br>Присоединяйся <span>к моей команде</span><br><a href="https://instagram.com/perrott.fit">#FITWITH<wbr>PERROTT</a>
+        </div>
+        <a href="https://21day.katyaperrott.com/zakaz" class="header-button-sm">Начать программу</a>
+        </div>
+        <main role="main">
+            <article class="header-slogan">
+                <span>Моя цель – помочь</span>
+                <span> тебе найти баланс</span>
+                <span> в питании и</span><br>
+                <span> тренировках</span>
+                <span> без вреда</span>
+                <span> для здоровья,</span>
+                <span> и жить</span><br>
+                <span> более счастливой</span>
+                <span> и полно<wbr>ценной жизнью.</span>
+            </article>
+            <article class="header-slogan-sm">
+                Моя цель – помочь тебе найти баланс в питании и тренировках без вреда для здоровья, и жить более счастливой и полно<wbr>ценной жизнью.
+            </article>
+            <article class="target-diets row">
+                <div class="target-diets-second col-sm-12 col-md-6 boot-photo">
+                    <img src="/site_img/diets.png" class="target-diets-img" height="auto">
+                </div>
+                <div class="target-diets-first col-sm-12 col-md-6">
+                    <p>Помнишь все эти диеты, где надо сутками сидеть на кефире и яблоке или жевать исключительно салат?</p>
+                    <p>Дело в том, что мы отказываем себе в любимой еде и доводим организм до стресса такими голодовками, а потом срываемся и бросаем начатое.</p>
+                    <p>Или же сидим на диете до конца, но как только возвращаемся к обычному питанию вес возвращается.</p>
+                    <p> А может быть ты отрабатываешь любимую еду часами кардио?</p>
+                    <p class="bright">Мой подход кардинально отличается!</p>
+                    <p>Я хочу помочь тебе разорвать этот порочный круг и навсегда поменять твое пищевое поведение и вкусовые привычки.</p>
+                </div>
+            </article>
+            <article class="target-ideas row">
+                <div class="target-ideas-second col-sm-12 col-md-6">
+                     <p class="title">Вот что мы сделаем:</p>
+                    <p>• научу тебя <span class="bright">грамотно сочетать продукты</span>, питаться вкусно, разнообразно и с пользой для организма.</p>
+                    <p>• научу тебя тренироваться везде - где удобно тебе и тогда, когда удобно тебе. <span class="bright">Больше никаких оправданий!</span></p>
+                    <p>• научу чувствовать себя и свое тело, <span class="bright">будешь нравиться себе</span> каждый раз смотрясь в зеркало!</p>
+                    <p>• подарю тебе необходимый заряд энергии, который поможет продолжать тренироваться и идти к <span class="bright">телу твоей мечты.</span></p>
+                    <p>• лично займусь процессом твоей трансформации и доведу тебя до результата <span class="bright">без вреда для твоего здоровья.</span></p>
+                    <p class="title-big">Цель моей программы:</p>
+                    <p class="cursive">Помочь тебе чувствовать себя комфортно и уверенно в своем теле, без жестких диет, ограничений и риска для здоровья.</p>
+                </div>
+                <div class="target-ideas-first col-sm-12 col-md-6 boot-photo">
+                    <img src="/site_img/ideas.png" class="target-ideas-img" height="auto">
+                </div>
+            </article>
+            <article class="program21">
+                <div class="program21-main program21-main-1 row">
+                    <div class="program21-first col-sm-12 col-md-6 boot-photo">
+                        <img src="/site_img/program21-1.jpeg" class="program21-img" height="auto">
+                    </div>
+
+                    <div class="program21-second col-sm-12 col-md-6">
+                        <p class="title">ПРОГРАММА “21 ДЕНЬ”</p>
+                        <p>Если повторять какое-то действие в течение 21 дня, то это становится твоей привычкой.</p>
+                        <p>Таким образом, правильно питаясь и тренируясь в течение 21 дня, ты выработаешь новые полезные привычки.</p>
+                        <p>Для занятий по программе, нет необходимости в доступе к тренажерному залу.</p>
+                        <p>Ты сможешь выполнять тренировки там, где удобно тебе – дома, на улице, в отпуске, в командировке.</p>
+                        <p>Выполнив дополнительное задание, ты сможешь получить доступ к программе на дополнительные 21 день.</p>
+                    </div>
+                </div>
+                <div class="program21-main row">
+                    <div class="program21-third col-sm-12 col-md-6">
+                        <p class="title">Что ты получишь?</p>
+                        <p>• Доступ к видео – тренировкам в течение 21 дня</p>
+                        <p>• 2 тренировки в день – одна на укрепление мышечного корсета, другая для интенсивного жиросжигания</p>
+                        <p>• 6 тренировок в неделю по 25 минут – ты сама выбираешь, когда тебе тренироваться</p>
+                        <p>• Меню с рецептами на 21 день</p>
+                        <p>• Питание без расчета калорий</p>
+                        <p>• Полезные статьи</p>
+                        <p>• Индивидуальное сопровождение</p>
+                        <p>• Еженедельные отчеты</p>
+                        <p>• Общий чат для общения с другими участницами</p>
+                        <p>• Мотивация каждый день</p>
+                        <p class="title">Оборудование</p>
+                        <p>• Фитнес резинки, утяжелители (гантели или бутылки с водой)</p>
+                        <p class="title-big">СТОИМОСТЬ <span class="bright">1190 руб.</span></p>
+                        <a href="https://21day.katyaperrott.com/zakaz" class="button">Купить программу</a>
+                    </div>
+                    <div class="program21-fourth col-sm-12 col-md-6 boot-photo">
+                        <img src="/site_img/program21-2.png" class="program21-img" height="auto">
+                    </div>
+                </div>
+            </article>
+            <article class="questions">
+                <div class="questions-title-first questions-title">Остались вопросы?</div>
+                <div class="questions-title-second questions-title">Возможно, ты найдешь ответы в этом разделе:</div>
+                <div class="questions-main row">
+                    <article class="questions-main-1 questions-main-item col-sm-12 col-md-6">
+                        <div class="questions-main-title">Почему программа рассчитана на 21 день?</div>
+                        <div class="questions-main-text">Если повторять какое-то действие в течение 21 дня, то это становится твоей привычкой. Таким образом, правильно питаясь и тренируясь в течение 21 дня, ты выработаешь новые полезные привычки.</div>
+                    </article>
+                    <article class="questions-main-2 questions-main-item col-sm-12 col-md-6">
+                        <div class="questions-main-title">Нужен ли мне доступ в тренажерный зал?</div>
+                        <div class="questions-main-text">Нет, в тренажерном зале нет необходимости, если у тебя нет к нему доступа. Ты сможешь выполнять тренировки там, где удобно тебе – дома, на улице, в отпуске, в командировке и тд.</div>
+                    </article>
+                    <article class="questions-main-3 questions-main-item col-sm-12 col-md-6">
+                        <div class="questions-main-title">Смогу ли я питаться по меню, если я вегетарианец?</div>
+                        <div class="questions-main-text">Да, я могу предоставить вариант вегетарианского меню по запросу.</div>
+                    </article>
+                    <article class="questions-main-4 questions-main-item col-sm-12 col-md-6">
+                        <div class="questions-main-title">Действительно ли эта программа работает?</div>
+                        <div class="questions-main-text">Я написала эту программу и занималась по ней лично. Увидев результат, я протестировала ее на нескольких фокус-группах и у всех участниц были отличные результаты – потеря веса, больше энергии, лучше сон, изменение пищевых привычек.</div>
+                    </article>
+                    <article class="questions-main-5 questions-main-item col-sm-12 col-md-6">
+                        <div class="questions-main-title">Как долго у меня будет доступ к программе?</div>
+                        <div class="questions-main-text">Доступ к курсу закроется по окончании курса. Чтобы получить бесплатный доступ на дополнительный месяц, необходимо выполнить задание.</div>
+                    </article>
+                </div>
+                <div class="questions-title-third questions-title">Если у тебя еще остались вопросы:</div>
+                <div class="questions-title-fourth questions-title">Пожалуйста, напиши мне <a href="mailto:katya.perrott.fitness@gmail.com" class="bright">katya.perrott.<wbr>fitness@gmail.com</a> и я отвечу в ближайшее время.</div>
+            </article>
+            <article class="comments">
+                <div class="comments-title">Отзывы тех, кто уже попробовал</div>
+
+
+
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner row">
+                            <div class="carousel-item active col-sm-12 col-md-4"><p>...“ Привет всем, у меня за неделю минус 2.4, что-то маловато, но чувствую себя хорошо, стало легче. Есть хотелось, но не всегда.</p><p>Хочу придерживаться правильного питания и физических нагрузок, так как хочется достигнуть большего!</p><p>Катюша, огромное тебе спасибо! Мне очень понравился марафон!</p><p> Думаю, в следующих буду с самого начала!...”</p></div>
+                            <div class="carousel-item col-sm-12 col-md-4">...” Я реально кайфую от того, что смогла лишние кг. Еще муж так же начал питаться, ему очень нравится! Времени не так много, что бы готовить на 2-х разное меню...”</div>
+                            <div class="carousel-item col-sm-12 col-md-4"><p>...” Мои занятия спортом ушли на второй план когда появилась своя семья. Результат- за 4года +10кг. Первая неделя была переломная т.к. люблю сладкое,белый хлеб, порции побольше... . Через7-10 дней привыкла, даже понравилось.</p><p> Некоторые упражнения были сложными, но желание добиться цели победило. Спасибо,что помогли преодолеть себя....”</p></div>
+                            <div class="carousel-item col-sm-12 col-md-4"><p>...“Спасибо Кате и ее программе за волшебный пинок!</p><p>Спасибо, что на протяжении всех трех недель продолжала подстегивать и мотивировать делать упражнения и правильно питаться. Похудела на 4 кг.</p><p>Для меня это результат. Ушли сантиметры, появились силы и желание добиться больших результатов!...”</p></div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </article>
+            <article class="results">
+                <div class="results-title">Фотографии с результатами</div>
+                <div id="carousel1" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner row">
+
+                        <div class="carousel-item col-sm-12 col-md-4 active">
+                            <img src="/site_img/result1.png" class="carousel-img">
+                        </div>
+                        <div class="carousel-item col-sm-12 col-md-4">
+                            <img src="/site_img/result2.png" class="carousel-img">
+                        </div>
+                        <div class="carousel-item col-sm-12 col-md-4">
+                            <img src="/site_img/result3.png" class="carousel-img">
+                        </div>
+                        <div class="carousel-item col-sm-12 col-md-4">
+                            <img src="/site_img/result4.png" class="carousel-img">
+                        </div>
+                    </div>
+                  <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+            </article>
+            <div class="garantee-left-sm">
+                <div class="garantee-title-sm">Ты готова увидеть <br><span class="bright">РЕАЛЬНЫЙ</span><br> результат?</div>
+                <a href="https://21day.katyaperrott.com/zakaz" class="garantee-button-sm">Купить программу</a>
+            </div>
+            <article class="garantee">
+                <div class="garantee-floatR">
+                    <img src="/site_img/garantee.png" class="garantee-img">
+                </div>
+                <div class="garantee-left">
+                    <div class="garantee-title">Ты готова увидеть <span class="bright">РЕАЛЬНЫЙ</span> результат?</div>
+                    <a href="https://21day.katyaperrott.com/zakaz" class="garantee-button">Купить программу</a>
+                </div>
+                <a class="garantee-tel-sm" href="tel:+79850498991">+7 985 049 8991</a>
+            </article>
+            <div class="garantee-social">
+                <a href="https://www.facebook.com/katyaperrottFITNESS/" target="_blank" class="garantee-social-unit garantee-social-unit1"></a>
+                <a href="https://www.youtube.com/channel/UCYzrZTkPSPYpf8aSGBNYKhg" target="_blank" class="garantee-social-unit garantee-social-unit2"></a>
+                <a href="https://www.instagram.com/katya.perrott/" target="_blank" class="garantee-social-unit garantee-social-unit3"></a>
+                <a href="https://t.me/KatyaPerrott" target="_blank" class="garantee-social-unit garantee-social-unit4"></a>
+            </div>
+
+            <div class="clear-fix"></div>
+        </main>
+
+
+        <footer>
+
+             <div class="footer-row row">
+                 <div class="d-none d-md-block col-md-6">
+                    <img src="/site_img/footer.png" class="footer-img">
+                 </div>
+                 <div class="col-sm-12 col-md-6">
+                     <form action="/contactUs" method="post" role="form" class="form" id="form">
+                        <div class="form-title">Напиши мне</div>
+                        <?php echo e(csrf_field()); ?>
+
+                        <div class="form-item">
+                            <div class="form-label">Ваше имя</div>
+                            <input type="text" class="form-control" id="name" name="name" value="<?php echo e(old('name')); ?>" placeholder="Введите ваше имя">
+                            <?php if($errors->has('name')): ?>  <div class="validate-error"><?php echo e($errors->first('name')); ?></div> <?php endif; ?>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-label">Ваша почта</div>
+                            <input type="email" class="form-control" id="email" name="email" value="<?php echo e(old('email')); ?>" placeholder="Введите вашу почту">
+                            <?php if($errors->has('email')): ?>  <div class="validate-error"><?php echo e($errors->first('email')); ?></div> <?php endif; ?>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-label">Ваш вопрос</div>
+                            <textarea class="form-control" id="text" name="text" rows="4" placeholder="Введите ваш вопрос"><?php echo e(old('text')); ?></textarea>
+                            <?php if($errors->has('text')): ?>  <div class="validate-error"><?php echo e($errors->first('text')); ?></div> <?php endif; ?>
+                        </div>
+                        <div class="form-group" id="captcha-wrap">
+                            <img src="<?php echo e(captcha_src('flat')); ?>" alt="captcha" class="captcha-img" data-refresh-config="flat">
+                            <div class="captcha-refresh" href="#" id="refresh"><img src="<?php echo e(asset('site_img/captcha_refresh.png')); ?>"  class="captcha-refresh"></div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-label">Подтверждение</div>
+                            <input class="form-control" type="text" name="captcha" placeholder="Введите код"/>
+                            <?php if($errors->has('captcha')): ?>  <div class="validate-error"><?php echo e($errors->first('captcha')); ?></div> <?php endif; ?>
+                        </div>
+                        <button type="submit" class="btn-submit">Отправить</button>
+                    </form>
+                 </div>
+            </div>
+            <div class="footer-links">
+                <a href="<?php echo e(route('offerta')); ?>" target="_blank" class="footer-offerta">Пользовательское соглашение</a>
+                <a href="<?php echo e(route('personal')); ?>" target="_blank" class="footer-personal">Обработка персональных данных</a>
+            </div>
+        </footer>
+        <?php if(session('myflag')): ?>
+
+            <div class="mail-shadow">
+            </div>
+            <div class="mail-container">
+                <div class="mail-window">
+                    <div class="mail-title">
+                        Ваше сообщение отправлено!
+                    </div>
+                    <div class="mail-p">
+                        Благодарим за обращение мы обязательно свяжемся с вами!
+                    </div>
+                    <div class="mail-button">
+                        Ок
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
+    </div>
+
+<script src="<?php echo e(asset('/js/app.js')); ?>"></script>
+    <script src="<?php echo e(asset('/js/carousel.js')); ?>"></script>
+    <script src="<?php echo e(asset('/js/refresh_captcha.js')); ?>"></script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2465267246844710');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1"
+             src="https://www.facebook.com/tr?id=2465267246844710&ev=PageView
+&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <script>
+      $('.mail-button').click( function(){ $('.mail-shadow, .mail-container').fadeOut()})
+    </script>
+</body>
+      
+</html>
