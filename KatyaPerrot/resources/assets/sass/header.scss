@@ -1,0 +1,370 @@
+// Variables
+@import "variables";
+
+
+// Header
+header{
+    max-width: 100% !important;
+    width: 1600px;
+    height: 0.676*1600px;
+    padding-top: 20px;
+    display: block;
+    background-image: url(/site_img/header.png);
+    background-size: cover;
+}
+
+
+.social-icons{
+    float: right;
+    margin: -80px 30px 20px;
+    width: 100%;
+    max-width: 300px;
+    height: 32px;
+    display: flex;
+    justify-content: space-around;
+    &-unit{
+        height: 32px;
+        width: 32px;
+        background-size: contain;
+        
+    }
+    &-unit1{ background-image: url(/site_img/social-icon1.png); }
+    &-unit2{ background-image: url(/site_img/social-icon2.png); }
+    &-unit3{ background-image: url(/site_img/social-icon3.png); }
+    &-unit4{ background-image: url(/site_img/social-icon4.png); }
+}
+
+.header-floatR{
+    float: right;
+    margin: 0 30px 20px;
+    display: block;
+    max-width: 250px;
+}
+
+.header-logo{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.header-tel{
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    @include text(24px, $first-text-color, 29px);
+    text-align: center;
+    &:hover{
+        color: $first-text-color;
+    }
+}
+
+
+.header-title{
+    text-align: center;
+    max-width: 570px;
+    width: 100%;
+    &-sm{
+        display: none;
+    }
+    span{
+        display: inline-block;;
+    }
+    &-first{
+        @include text(36px, $first-text-color, 44px);
+        font-weight: 700;
+        margin: 0 30px 20px;
+    }
+    &-second{
+        @include text(24px, $third-text-color, 29px);
+        margin: 0 30px 15px;
+        a, a:hover{
+            color: $first-text-color;
+        }
+    }
+}
+
+.header-main{
+    width: 90%;
+    margin: 0 30px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 240px;
+    max-width: 570px;
+    p{
+        text-indent: 20px;
+        margin-bottom: 15px;
+        @include text(16px, $third-text-color, 20px);
+    }
+    p:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.header-slogan{
+    display: block;
+    width: 100%;
+    padding: 40px 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $first-text-color;
+    background-color: $container-color;
+    span{
+        display: inline-block;
+    }
+    &-sm{
+        display: none;
+    }
+}
+
+.header-button{
+    display: block;
+    width: 220px;
+    height: 50px;
+    background: #EEFFFA;
+    box-shadow: 0 2px 0 #B4E2F1;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: content-box;
+    @include text(18px, $first-text-color, 50px);
+    &:hover{
+        color: $first-text-color;
+        text-decoration: none;
+    }
+    margin: 30px 0 30px 100px;
+}
+
+.header-button-sm {
+    display: none;
+}
+
+@media (max-width: 2000px) {
+    header {
+        width: calc(100vw - 400px);
+        height: calc(0.676 * calc(100vw - 400px));
+    }
+}
+
+@media (max-width: 1600px) {
+    header{
+        width: 100vw;
+        height: 67.6vw;
+        padding-top: 10px;
+    }
+    .header-title-first{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1420px) {
+    .header-title{
+        &-first{
+            width: 65%;
+        }
+        &-second{
+            @include text(22px, $third-text-color, 26px);
+            width: 52%;
+        }
+    }
+    .header-floatR{
+        width: 27%;
+    }
+    .header-button{
+        margin-left: 7%;
+    }
+    .header-main{
+        max-width: 470px;
+        @include text(14px, $third-text-color, 16px);
+    }
+}
+
+@media (max-width: 1100px) {
+    .header-main{
+        display: none;
+    }
+    header{
+        padding-top: 25px;
+    }
+    .header-title{
+        margin-top: 25px;
+    }
+    .header-button{
+        margin-top: 7%;
+    }
+    .social-icons {
+        float: right;
+        margin: -240px 30px 20px;
+        width: 32px;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .header-tel{
+        @include text(20px, $first-text-color, 23px);
+    }
+    .header-slogan{
+        display: none;
+        &-sm {
+            display: block;
+            @include text(24px, $first-text-color, 28px);
+            text-indent: 20px;
+            text-align: justify;
+            justify-content: space-around;
+            padding: 30px 10%;
+            background-color: $container-color;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-top: 10px;
+    }
+    .header-title, .header-main {
+        margin: 20px 0 20px;
+    }
+    .header-floatR {
+        margin: 0 5px 10px;
+    }
+    .header-title {
+        margin-top: 10px;
+        &-first {
+            @include text(28px, $first-text-color, 30px);
+        }
+        &-second {
+            @include text(18px, $third-text-color, 20px);
+        }
+    }
+    .social-icons {
+        float: right;
+        margin: -190px 30px 20px;
+        width: 24px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &-unit {
+            height: 24px;
+            width: 24px;
+        }
+    }
+    .header-tel {
+        @include text(10px, $first-text-color, 11px);
+    }
+}
+
+@media (max-width: 700px) {
+    .header{
+        &-sm{
+            background-color: $main-bg-color;
+            padding: 20px 0;
+        }
+        &-button{
+            display: none;
+        }
+        &-button-sm{
+            display: block;
+            width: 180px;
+            height: 40px;
+            margin: 30px auto 5px;
+            background-color: $button-color;
+            box-shadow: 0 2px 0 #B4E2F1;
+            border-radius: 10px;
+            text-align: center;
+            @include text(14px, $first-text-color, 40px);
+            font-weight: 500;
+            &:hover{
+                color: $first-text-color;
+                text-decoration: none;
+            }
+        }
+        &-title {
+            display: none;
+            &-sm{
+                display: block;
+                margin: 20px 0;
+                text-align: center;
+                background-color: $main-bg-color;
+                &-first{
+                    @include text(22px, $first-text-color, 30px);
+                    font-weight: 700;
+
+                }
+                &-second{
+                    @include text(18px, $first-text-color, 30px);
+                    a, a:hover{
+                        text-decoration: none;
+                        color: $second-text-color;
+                    }
+                }
+            }
+        }
+    }
+    .header-slogan {
+        &-sm {
+            display: block;
+            @include text(18px, $first-text-color, 22px);
+            text-indent: 20px;
+            text-align: justify;
+            justify-content: space-around;
+            padding: 30px 10%;
+            background-color: $container-color;
+        }
+    }
+    .social-icons {
+        margin: -64% 20px 20px;
+        width: 18px;
+        height: 140px;
+        &-unit {
+            height: 18px;
+            width: 18px;
+        }
+    }
+    .header-floatR {
+        margin: 0 10px 10px;
+        width: 35%;
+        float: left;
+    }
+    .header-logo {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .header-tel:hover, .header-tel{
+        text-decoration: underline;
+        @include text(16px, $third-text-color, 19px);
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px){
+    .header-title-sm{
+        &-first{
+            @include text(16px, $first-text-color, 28px);
+            font-weight: 700;
+        }
+        &-second{
+            @include text(14px, $first-text-color, 28px);
+        }
+    }
+    .header-tel:hover, .header-tel{
+        text-decoration: underline;
+        @include text(12px, $third-text-color, 15px);
+        text-align: center;
+    }
+    .social-icons {
+        width: 14px;
+        height: 80px;
+        &-unit {
+            height: 14px;
+            width: 14px;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+@import "variables";
+
+.questions{
+    background-color: $container-color;
+    display: block;
+    width: 100%;
+    margin: 0 auto 0 !important;
+    padding: 60px 0 30px;
+    &-title{
+        @include text(18px, $first-text-color, 22px);
+        margin: 25px 0;
+        text-align: center;
+        &-first{
+             @include text(24px, $first-text-color, 29px);
+        }
+        &-first, &-third{
+            font-weight: 700;
+        }
+        &-second{
+            font-weight: 600;
+        }
+        &-third{
+            margin-top: 80px;
+        }
+        &-fourth{
+            @include text(14px, $first-text-color, 17px);
+            font-weight: 500;
+            margin-bottom: 60px;
+        }
+        .bright{
+            color: $second-text-color;
+        }
+    }
+}
+
+.questions-main{
+    margin: 0  !important;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    &-item{
+        
+        padding: 20px 30px !important;
+        @include text(14px, $first-text-color, 17px);
+    }
+    &-title{
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: $second-text-color;
+    }
+}
+
+.comments{
+    display: block;
+    width: 100%;
+    margin: 0 auto 0 !important;
+    padding: 30px 0;
+    background-color: $main-bg-color;
+    &-title{
+        @include text(32px, $first-text-color, 39px);
+        font-weight: 600;
+        text-align: center;
+        margin: 60px 0;
+    }
+    .carousel{
+        width: 80%;
+        margin: 0 auto;
+        .carousel-item{
+            padding: 25px;
+            @include text(14px, $first-text-color, 18px);
+
+        }
+        &-inner{
+            margin: 0 !important;
+        }
+    }
+    .carousel-control-prev-icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+    .carousel-control-prev{
+        left: -10%;
+    }
+    .carousel-control-next-icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+    .carousel-control-next{
+        right: -10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .questions,  .comments{
+        padding: 15px 0 15px;
+    }
+    .comments-title {
+        margin: 20px 0 !important;
+    }
+    .questions-title{
+        &-third{
+            margin-top: 20px;
+        }
+        &-fouth{
+            margin-bottom: 30px;
+        }
+    }
+}
+

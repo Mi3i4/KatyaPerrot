@@ -1,0 +1,293 @@
+@import "variables";
+
+
+.garantee{
+    max-width: 100% !important;
+    width: 1600px;
+    height: 0.455*1600px;
+    display: block;
+    background-image: url(/site_img/garantee_bg.png);
+    background-size: cover;
+    padding: 0;
+    margin: 0 auto !important;
+    color: $first-text-color;
+    &-tel-sm{
+        display: none;
+    }
+    &-left{
+        &-sm{
+            display: none;
+        }
+        max-width: 420px;
+        margin: 0 0 0 7%;
+        padding-top: 10%;
+        width: 100%;
+    }
+    &-title{
+        width: 100%;
+        @include text(36px, $third-text-color, 42px);
+        text-align: center;
+        font-weight: 700;
+        .bright{
+            color: $bright-text-color;
+        }
+    }
+    &-floatR{
+        width: 30%;
+        max-width: 300px;
+        margin: 0 auto;
+        float: right;
+    }
+
+    &-img{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        display: block;
+    }
+    .garantee-button{
+        display: block;
+        width: 220px;
+        height: 50px;
+        background: $button-color;
+        box-shadow: 0 2px 0 #B4E2F1;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        @include text(18px, $first-text-color, 50px);
+        &:hover{
+            color: $first-text-color;
+            text-decoration: none;
+        }
+        margin: 15% auto 0;
+    }
+    &-links{
+        margin: 5% auto 0;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+    }
+    &-personal, &-offerta{
+        text-align: center;
+        max-width: 320px;
+        display: block;
+        @include text(16px, $third-text-color, 20px);
+        padding: 5px 5px;
+        border-bottom: 1px solid $third-text-color;
+        color: $third-text-color !important;
+        text-decoration: none !important;
+    }
+    &-offerta{
+        margin-bottom: 35px;
+    }
+    &-personal:hover, &-offerta:hover{
+        color: $third-text-color;
+        text-decoration: none;
+    }
+    &-social {
+        float: right;
+        margin: -280px 30px 20px;
+        width: 32px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &-unit{
+            height: 32px;
+            width: 32px;
+            background-size: contain;
+        }
+        &-unit1{ background-image: url(/site_img/social-icon1.png); }
+        &-unit2{ background-image: url(/site_img/social-icon2.png); }
+        &-unit3{ background-image: url(/site_img/social-icon3.png); }
+        &-unit4{ background-image: url(/site_img/social-icon4.png); }
+    }
+}
+.garantee-button-sm-wrap{
+    display: none;
+}
+
+@media (max-width: 2000px) {
+    .garantee {
+        width: calc(100vw - 400px);
+        height: calc(0.455 * calc(100vw - 400px));
+    }
+}
+
+@media (max-width: 1600px) {
+    .garantee {
+        width: 100vw;
+        height: 45.5vw;
+    }
+    .garantee {
+        &-title {
+            @include text(30px, $third-text-color, 33px);
+            font-weight: 700;
+        }
+        &-left {
+            margin: 0 0 0 15px;
+            padding-top: 10%;
+            width: 35%;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .garantee{
+        &-title{
+            @include text(30px, $third-text-color, 33px);
+            font-weight: 700;
+        }
+        &-left{
+            margin: 0 0 0 15px;
+            padding-top: 10%;
+            width: 35%;
+        }
+    }
+    .garantee-social{
+        float: right;
+        margin: -80px 30px 20px;
+        width: 100%;
+        max-width: 300px;
+        height: 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        &-unit {
+            height: 32px;
+            width: 32px;
+            background-size: contain;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .garantee{
+        &-left{
+            padding-top: 5%;
+        }
+        &-title{
+            @include text(24px, $third-text-color, 29px);
+            font-weight: 700;
+            max-width: 280px;
+        }
+    }
+    .garantee-social {
+        margin: -80px 20px 20px;
+        width: 260px;
+        height: 28px;
+        &-unit {
+            height: 28px;
+            width: 28px;
+        }
+    }
+
+}
+
+@media (max-width: 700px){
+    .garantee-links{
+        justify-content: space-around;
+    }
+    .garantee{
+        &-title{
+           display: none;
+        }
+        .garantee-button{
+            display: none;
+        }
+        &-social{
+            float: left;
+            margin: -35px 15px 0;
+            width: 140px;
+            height: 18px;
+            &-unit {
+                height: 18px;
+                width: 18px;
+                background-size: contain;
+            }
+        }
+        &-links{
+            display: none;
+        }
+        &-left{
+            display: none;
+           &-sm{
+               padding: 20px 0;
+               background-color: $container-color;
+               display: block;
+               width: 100%;
+               .garantee-title-sm{
+                   @include text(30px, $first-text-color, 33px);
+                   text-align: center;
+                   font-weight: 700;
+                   .bright{
+                       color: $bright-text-color;
+                   }
+               }
+               .garantee-button-sm{
+                   display: block;
+                   width: 180px;
+                   height: 40px;
+                   background-color: $button-color;
+                   box-shadow: 0 2px 0 #B4E2F1;
+                   border-radius: 10px;
+                   text-align: center;
+                   @include text(14px, $first-text-color, 40px);
+                   font-weight: 500;
+                   &:hover{
+                       color: $first-text-color;
+                       text-decoration: none;
+                   }
+                   margin: 20px auto 30px;
+               }
+           }
+        }
+        &-tel-sm{
+            display: block;
+            float: left;
+            margin: 25px 12px;
+            @include text(16px, $third-text-color, 19px);
+            text-align: center;
+            text-decoration: underline;
+            &:hover{
+                color: $third-text-color;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .garantee{
+        &-tel-sm {
+            @include text(12px, $third-text-color, 15px);
+        }
+        &-title-sm {
+            @include text(24px, $first-text-color, 29px);
+            font-weight: 700;
+        }
+
+    }
+}
+@media (max-width: 370px){
+    .garantee {
+        &-title{
+            @include text(18px, $third-text-color, 20px);
+            font-weight: 700;
+        }
+        .garantee-hr {
+            display: none;
+        }
+        &-social{
+            float: left;
+            margin: -30px 15px 0;
+            width: 100px;
+            height: 14px;
+            &-unit {
+                height: 14px;
+                width: 14px;
+                background-size: contain;
+            }
+        }
+    }
+}

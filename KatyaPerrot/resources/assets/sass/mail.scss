@@ -1,0 +1,59 @@
+@import "variables";
+
+.mail-container{
+  width: 140vw;
+  height: 140vh;
+  position: fixed;
+  left: -20vw;
+  top: -20vh;
+}
+
+.mail-shadow{
+  width: 140vw;
+  height: 140vh;
+  position: fixed;
+  background-color: black;
+  opacity: 0.5;
+  left: -20vw;
+  top: -20vh;
+}
+
+.mail-window{
+  padding: 20px 0 25px;
+  width: 300px;
+  text-align: center;
+  margin: 55vh auto 0;
+  margin-top: calc(70vh - 150px);
+  background-color: $container-color;
+  opacity: 1;
+}
+ .mail-title{
+   width: 240px;
+   @include text(24px, $first-text-color, 29px);
+   margin: 0 auto 30px;
+   font-weight: 700;
+ }
+
+.mail-p{
+  @include text(18px, $first-text-color, 22px);
+  width: 270px;
+  margin: 0 auto;
+}
+
+.mail-button{
+  display: block;
+  width: 220px;
+  height: 50px;
+  background: $second-text-color;
+  box-shadow: 0 2px 0 #B4E2F1;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: content-box;
+  @include text(18px, $third-text-color, 50px);
+  margin: 20px auto 0;
+  font-weight: 700;
+  &:hover{
+    cursor: pointer;
+  }
+}
